@@ -15,8 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AeroPure — The Breath of Fresh Air",
-  description: "Breathtaking award-winning premium AC landing page engineered for peak performance and absolute silent operation.",
+  title: "شركة ارتكاز للمقاولات والتكييف — Ertikaz",
+  description: "شركة ارتكاز للمقاولات العالمية هي شركة هندسية وطنية رائدة متخصصة في أعمال التكييف والأعمال الكهروميكانيكية المتكاملة بالمملكة العربية السعودية.",
+  icons: {
+    icon: "/ertikaz-logo.jpeg",
+    apple: "/ertikaz-logo.jpeg",
+  },
 };
 
 export default async function LocaleLayout({
