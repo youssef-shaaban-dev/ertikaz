@@ -1,5 +1,6 @@
 import HeaderSection from "@/components/HeaderSection";
 import HeroSection from "@/components/HeroSection";
+import ClientsSection from "@/components/ClientsSection";
 import AboutSection from "@/components/AboutSection";
 import DisassemblySection from "@/components/DisassemblySection";
 import ServicesSection from "@/components/ServicesSection";
@@ -8,7 +9,6 @@ import ProjectSectorsSection from "@/components/ProjectSectorsSection";
 import StatsSection from "@/components/StatsSection";
 // import WhatsAppInquirySection from "@/components/WhatsAppInquirySection";
 import FooterSection from "@/components/FooterSection";
-import { Phone } from "lucide-react";
 import StickyWhatsapp from "@/components/StickyWhatsapp";
 
 export default async function Page({
@@ -22,6 +22,7 @@ export default async function Page({
     <div className="bg-gradient-to-b from-[#f0f9ff] via-[#ffffff] to-[#e6f4fe] text-blue-950 min-h-screen relative overflow-x-hidden selection:bg-blue-600 selection:text-white">
       <HeaderSection locale={locale} />
       <HeroSection locale={locale} />
+      <ClientsSection locale={locale} />
       <AboutSection locale={locale} />
       <DisassemblySection locale={locale} />
       <ServicesSection locale={locale} />
