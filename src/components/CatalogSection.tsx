@@ -66,6 +66,7 @@ export default function CatalogSection({ locale }: SectionProps) {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-w-720px) 100vw, 33vw"
+                loading="eager"
               />
             </div>
 

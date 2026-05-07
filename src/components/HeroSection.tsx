@@ -171,6 +171,7 @@ export default function HeroSection({ locale }: SectionProps) {
               priority
               className="object-cover object-center"
               sizes="(max-w-720px) 100vw, 50vw"
+              loading="eager"
             />
           </div>
         </div>

@@ -220,6 +220,7 @@ function HeroSection({
               priority
               className="object-cover object-center"
               sizes="(max-w-720px) 100vw, 50vw"
+              loading="eager"
             />
           </div>
         </div>
@@ -688,6 +689,7 @@ function CatalogSection({ isRtl, t }: TranslationProps) {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-w-720px) 100vw, 33vw"
+                loading="eager"
               />
             </div>
 

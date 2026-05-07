@@ -32,14 +32,14 @@ export default function HeaderSection({ locale }: SectionProps) {
             className="flex items-center gap-3 cursor-pointer group"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <div className="relative w-14 h-14 rounded-full overflow-hidden border border-sky-100 shadow bg-white flex items-center justify-center p-1.5 group-hover:scale-105 transition-transform duration-300">
+            <div className="relative w-36 h-14 rounded-xl overflow-hidden border border-sky-100 shadow bg-white flex items-center justify-center p-1 group-hover:scale-105 transition-transform duration-300">
               <Image
                 src="/ertikaz-logo.jpeg"
                 alt="Ertikaz Logo"
                 fill
                 priority
-                className="object-contain p-1"
-                sizes="56px"
+                className="object-contain"
+                sizes="144px"
               />
             </div>
           </div>
