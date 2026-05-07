@@ -14,19 +14,16 @@ export default function FooterSection({ locale }: SectionProps) {
     <footer className="py-16 border-t border-sky-100 px-6 bg-[#f4faff] relative z-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-sm text-blue-900/70 text-right rtl:text-right ltr:text-left">
         <div className="space-y-4">
-          <div className="flex items-center gap-3 justify-start">
-            <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-sky-200 shadow bg-white flex items-center justify-center p-1">
+          <div className="flex items-center justify-start">
+            <div className="relative w-36 h-14 rounded-xl overflow-hidden border border-sky-200 shadow bg-white flex items-center justify-center p-1">
               <Image
                 src="/ertikaz-logo.jpeg"
                 alt="Ertikaz Logo"
-                width={35}
-                height={35}
+                fill
                 className="object-contain"
+                sizes="144px"
               />
             </div>
-            <span className="text-base font-black text-blue-950">
-              {isRtl ? "شركة ارتكاز" : "Ertikaz SA"}
-            </span>
           </div>
           <p className="text-xs font-semibold leading-relaxed">
             {isRtl
@@ -48,8 +45,8 @@ export default function FooterSection({ locale }: SectionProps) {
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-blue-600" />
-              <a href="tel:0114998895" className="hover:text-blue-600">
-                0114998895
+              <a href="tel:+966114998895" className="hover:text-blue-600">
+                +966114998895
               </a>
             </li>
             <li className="flex items-center gap-2">
