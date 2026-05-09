@@ -15,7 +15,7 @@ export default function CatalogSection({ locale }: SectionProps) {
   const isRtl = locale === "ar";
 
   return (
-    <section id="catalog" className="py-24 sm:py-32 bg-linear-to-b from-[#f0f8ff] via-[#ffffff] to-[#e8f4fd] border-y border-sky-100 relative z-20 overflow-hidden">
+    <section id="services" className="py-24 sm:py-32 bg-linear-to-b from-[#f0f8ff] via-[#ffffff] to-[#e8f4fd] border-y border-sky-100 relative z-20 overflow-hidden">
       {/* Decorative dynamic background circles */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-sky-100/30 rounded-full blur-3xl -z-10" />

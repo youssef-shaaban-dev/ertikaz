@@ -33,7 +33,7 @@ export default function HeaderSection({ locale }: SectionProps) {
             className="flex items-center gap-3 cursor-pointer group"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <div className="relative w-36 h-14 rounded-xl overflow-hidden border border-sky-100 shadow bg-white flex items-center justify-center p-1 group-hover:scale-105 transition-transform duration-300">
+            <Link href={`/${locale}`} className="relative w-36 h-14 rounded-xl overflow-hidden border border-sky-100 shadow bg-white flex items-center justify-center p-1 group-hover:scale-105 transition-transform duration-300">
               <Image
                 src="/ertikaz-logo.jpeg"
                 alt="Ertikaz Logo"
@@ -42,41 +42,41 @@ export default function HeaderSection({ locale }: SectionProps) {
                 className="object-contain"
                 sizes="144px"
               />
-            </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-1.5 font-bold text-sm text-blue-950/80">
-            <a
-              href="#"
+            <Link
+              href={`/${locale}`}
               className="px-3.5 py-1.5 hover:bg-sky-50/70 hover:text-blue-600 rounded-full transition-all"
             >
               {t("nav_home")}
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href={`/${locale}#about`}
               className="px-3.5 py-1.5 hover:bg-sky-50/70 hover:text-blue-600 rounded-full transition-all"
             >
               {t("nav_about")}
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              href={`/${locale}#services`}
               className="px-3.5 py-1.5 hover:bg-sky-50/70 hover:text-blue-600 rounded-full transition-all"
             >
               {t("nav_services")}
-            </a>
+            </Link>
             <Link
               href={`/${locale}/projects`}
               className="px-3.5 py-1.5 hover:bg-sky-50/70 hover:text-blue-600 rounded-full transition-all"
             >
               {t("nav_projects")}
             </Link>
-            <a
-              href="#contact"
+            <Link
+              href={`/${locale}#contact`}
               className="px-3.5 py-1.5 hover:bg-sky-50/70 hover:text-blue-600 rounded-full transition-all"
             >
               {t("nav_contact")}
-            </a>
+            </Link>
           </nav>
 
           {/* Action Area */}
@@ -91,12 +91,12 @@ export default function HeaderSection({ locale }: SectionProps) {
             </button>
 
             {/* Direct Contact Button */}
-            <a
-              href="#contact"
+            <Link
+              href={`/${locale}#contact`}
               className="hidden md:flex px-6 py-2.5 text-xs sm:text-sm font-black rounded-full bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white transition-all shadow-md shadow-blue-500/10 hover:scale-[1.02]"
             >
               {t("cta_primary")}
-            </a>
+            </Link>
 
             {/* Mobile Hamburger Toggle */}
             <button
@@ -131,20 +131,20 @@ export default function HeaderSection({ locale }: SectionProps) {
             >
               {t("nav_home")}
             </Link>
-            <a
-              href="#about"
+            <Link
+              href={`/${locale}#about`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="py-2.5 px-4 hover:bg-sky-50/60 hover:text-blue-600 rounded-2xl transition-all"
             >
               {t("nav_about")}
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              href={`/${locale}#services`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="py-2.5 px-4 hover:bg-sky-50/60 hover:text-blue-600 rounded-2xl transition-all"
             >
               {t("nav_services")}
-            </a>
+            </Link>
             <Link
               href={`/${locale}/projects`}
               onClick={() => setIsMobileMenuOpen(false)}
@@ -152,24 +152,24 @@ export default function HeaderSection({ locale }: SectionProps) {
             >
               {t("nav_projects")}
             </Link>
-            <a
-              href="#contact"
+            <Link
+              href={`/${locale}#contact`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="py-2.5 px-4 hover:bg-sky-50/60 hover:text-blue-600 rounded-2xl transition-all"
             >
               {t("nav_contact")}
-            </a>
+            </Link>
           </nav>
 
           <div className="pt-4 border-t border-sky-100 flex flex-col gap-3">
-            <a
-              href="#contact"
+            <Link
+              href={`/${locale}#contact`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 text-white font-black text-center text-sm shadow-md flex items-center justify-center gap-2"
             >
               <span>{t("cta_primary")}</span>
               <ArrowRight className={`w-4 h-4 ${isRtl ? "rotate-180" : ""}`} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

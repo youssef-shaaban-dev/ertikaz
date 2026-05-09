@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface SectionProps {
   locale: string;
@@ -55,12 +56,12 @@ export default function AboutSection({ locale }: SectionProps) {
 
           <div>
             {/* The beautiful solid sky-blue pill button from screenshot */}
-            <a
-              href="#services"
+            <Link
+              href={`/${locale}#services`}
               className="inline-block px-8 py-3 bg-[#54c4f3] hover:bg-[#3db3e6] text-white font-extrabold text-sm rounded-full transition-all hover:scale-105 shadow-md shadow-[#54c4f3]/20"
             >
               {isRtl ? "عرض المزيد" : "View More"}
-            </a>
+            </Link>
           </div>
         </div>
 

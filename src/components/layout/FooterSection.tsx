@@ -11,7 +11,7 @@ export default function FooterSection({ locale }: SectionProps) {
   const isRtl = locale === "ar";
 
   return (
-    <footer className="py-16 border-t border-sky-100 px-6 bg-[#f4faff] relative z-20">
+    <footer id="contact" className="py-16 border-t border-sky-100 px-6 bg-[#f4faff] relative z-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-sm text-blue-900/70 text-right rtl:text-right ltr:text-left">
         <div className="space-y-4">
           <div className="flex items-center justify-start">
