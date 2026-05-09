@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import HeaderSection from "@/components/layout/HeaderSection";
+import FooterSection from "@/components/layout/FooterSection";
+import StickyWhatsapp from "@/components/layout/StickyWhatsapp";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -41,9 +44,14 @@ export default async function LocaleLayout({
       dir={isRtl ? "rtl" : "ltr"}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-100 overflow-x-hidden font-sans">
+      <body className="min-h-full flex flex-col bg-linear-to-b from-[#f0f9ff] via-[#ffffff] to-[#e6f4fe] text-blue-950 overflow-x-hidden font-sans selection:bg-blue-600 selection:text-white">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <HeaderSection locale={locale} />
+          <main className="grow bg-linear-to-b from-[#f0f9ff] via-[#ffffff] to-[#e6f4fe] text-blue-950 relative overflow-x-hidden selection:bg-blue-600 selection:text-white">
+            {children}
+          </main>
+          <StickyWhatsapp />
+          <FooterSection locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

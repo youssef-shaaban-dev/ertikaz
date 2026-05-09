@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Globe, Menu, X, ArrowRight } from "lucide-react";
 
@@ -64,12 +65,12 @@ export default function HeaderSection({ locale }: SectionProps) {
             >
               {t("nav_services")}
             </a>
-            <a
-              href="#catalog"
+            <Link
+              href={`/${locale}/projects`}
               className="px-3.5 py-1.5 hover:bg-sky-50/70 hover:text-blue-600 rounded-full transition-all"
             >
               {t("nav_projects")}
-            </a>
+            </Link>
             <a
               href="#contact"
               className="px-3.5 py-1.5 hover:bg-sky-50/70 hover:text-blue-600 rounded-full transition-all"
@@ -123,13 +124,13 @@ export default function HeaderSection({ locale }: SectionProps) {
       >
         <div className="bg-white/95 backdrop-blur-2xl border-b border-sky-100/80 pt-28 pb-8 px-6 space-y-6 shadow-2xl">
           <nav className="flex flex-col gap-4 font-extrabold text-base text-blue-950 text-right rtl:text-right ltr:text-left">
-            <a
-              href="#"
+            <Link
+              href={`/${locale}`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="py-2.5 px-4 hover:bg-sky-50/60 hover:text-blue-600 rounded-2xl transition-all"
             >
               {t("nav_home")}
-            </a>
+            </Link>
             <a
               href="#about"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -144,13 +145,13 @@ export default function HeaderSection({ locale }: SectionProps) {
             >
               {t("nav_services")}
             </a>
-            <a
-              href="#catalog"
+            <Link
+              href={`/${locale}/projects`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="py-2.5 px-4 hover:bg-sky-50/60 hover:text-blue-600 rounded-2xl transition-all"
             >
               {t("nav_projects")}
-            </a>
+            </Link>
             <a
               href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}

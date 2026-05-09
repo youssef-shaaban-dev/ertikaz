@@ -1,6 +1,5 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 
 interface SectionProps {
   locale: string;
