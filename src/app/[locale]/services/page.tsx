@@ -1,15 +1,10 @@
 import CatalogSection from "@/components/home/CatalogSection";
 
-export default async function ServicesPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function ServicesPage() {
 
   return (
     <>
-      <CatalogSection locale={locale} />
+      <CatalogSection />
     </>
   );
 }
