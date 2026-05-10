@@ -2,16 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Layers, ArrowLeft, ArrowRight } from "lucide-react";
 import { categories, getIcon } from "@/data/services";
 
-interface SectionProps {
-  locale: string;
-}
 
-export default function CatalogSection({ locale }: SectionProps) {
-  const t = useTranslations("Index");
+export default function CatalogSection() {
+  const t = useTranslations("Catalog");
+  const locale = useLocale();
   const isRtl = locale === "ar";
 
   return (
@@ -24,17 +22,13 @@ export default function CatalogSection({ locale }: SectionProps) {
         <div className="text-center space-y-4 mb-16 sm:mb-20 animate-fade-in">
           <div className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-blue-700 bg-blue-50 px-4 py-2 rounded-full border border-blue-100/60">
             <Layers className="w-4 h-4" />
-            <span>
-              {isRtl ? "خدماتنا الهندسية المعتمدة" : "OUR CONTRACTING SECTORS"}
-            </span>
+            <span>{t("badge")}</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-blue-950 tracking-tight">
-            {isRtl ? "خدماتنا" : "Our Services"}
+            {t("title")}
           </h2>
           <p className="text-blue-900/60 text-base sm:text-lg max-w-2xl mx-auto font-semibold leading-relaxed">
-            {isRtl 
-              ? "حلول كهروميكانيكية ومناخية متكاملة مصممة بأعلى المقاييس الهندسية لتلبي احتياجات مشاريعكم بالمملكة."
-              : "Comprehensive electromechanical and cooling solutions designed under the highest engineering standards."}
+            {t("desc")}
           </p>
         </div>
 
@@ -76,7 +70,7 @@ export default function CatalogSection({ locale }: SectionProps) {
 
                 <div className="flex items-center justify-between pt-6 border-t border-sky-50 mt-6">
                   <span className="text-xs font-bold text-sky-600 group-hover:text-blue-600 transition-colors">
-                    {isRtl ? "اكتشف الأنظمة والخدمات" : "Explore Sub-services"}
+                    {t("explore")}
                   </span>
                   <div className="w-10 h-10 rounded-full bg-sky-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 transform rtl:group-hover:-translate-x-1.5 ltr:group-hover:translate-x-1.5 shadow-sm">
                     {isRtl ? <ArrowLeft className="w-5 h-5" /> : <ArrowRight className="w-5 h-5" />}

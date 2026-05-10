@@ -2,17 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { ArrowRight, Wind, Activity, Shield, Cpu, Sparkles } from "lucide-react";
+import { Wind, Droplet, Flame, Zap, Sparkles } from "lucide-react";
 
-interface SectionProps {
-  locale: string;
-}
 
-export default function HeroSection({ locale }: SectionProps) {
+
+export default function HeroSection() {
   const t = useTranslations("Index");
-  const isRtl = locale === "ar";
+  const th = useTranslations("Hero");
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -66,9 +63,7 @@ export default function HeroSection({ locale }: SectionProps) {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-sky-200 bg-sky-50 text-blue-700 text-xs font-bold uppercase tracking-widest animate-pulse">
             <Sparkles className="w-3.5 h-3.5 text-blue-600" />
             <span>
-              {isRtl
-                ? "توريد • تركيب • صيانة التكييف والأعمال الكهروميكانيكية"
-                : "Supply • Install • Maintain HVAC & MEP"}
+              {th("badge")}
             </span>
           </div>
 
@@ -87,32 +82,32 @@ export default function HeroSection({ locale }: SectionProps) {
               <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 flex-shrink-0">
                 <Wind className="w-4 h-4" />
               </div>
-              <span className="text-xs font-bold text-blue-900/80">
-                {isRtl ? "تكييف وتهوية" : "HVAC Systems"}
+              <span className="text-[11px] sm:text-xs font-black text-blue-900/80 leading-tight">
+                {th("pill_hvac")}
               </span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 flex-shrink-0">
-                <Activity className="w-4 h-4" />
+                <Flame className="w-4 h-4" />
               </div>
-              <span className="text-xs font-bold text-blue-900/80">
-                {isRtl ? "أعمال سباكة وصحية" : "Plumbing Works"}
+              <span className="text-[11px] sm:text-xs font-black text-blue-900/80 leading-tight">
+                {th("pill_fire")}
               </span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 flex-shrink-0">
-                <Shield className="w-4 h-4" />
+                <Droplet className="w-4 h-4" />
               </div>
-              <span className="text-xs font-bold text-blue-900/80">
-                {isRtl ? "مكافحة الحريق" : "Fire Protection"}
+              <span className="text-[11px] sm:text-xs font-black text-blue-900/80 leading-tight">
+                {th("pill_plumb")}
               </span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 flex-shrink-0">
-                <Cpu className="w-4 h-4" />
+                <Zap className="w-4 h-4" />
               </div>
-              <span className="text-xs font-bold text-blue-900/80">
-                {isRtl ? "تمديدات كهرباء" : "Electrical works"}
+              <span className="text-[11px] sm:text-xs font-black text-blue-900/80 leading-tight">
+                {th("pill_elec")}
               </span>
             </div>
           </div>

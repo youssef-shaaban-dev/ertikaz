@@ -1,10 +1,6 @@
 import { useTranslations } from "next-intl";
 
-interface SectionProps {
-  locale: string;
-}
-
-export default function StatsSection({ locale }: SectionProps) {
+export default function StatsSection() {
   const t = useTranslations("Index");
 
   return (

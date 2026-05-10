@@ -16,6 +16,7 @@ interface SectionProps {
 
 export default function DisassemblySection({ locale }: SectionProps) {
   const t = useTranslations("Index");
+  const td = useTranslations("Disassembly");
   const isRtl = locale === "ar";
 
   // Refs for self-contained GSAP
@@ -159,7 +160,7 @@ export default function DisassemblySection({ locale }: SectionProps) {
           <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-blue-700">
             <Layers className="w-4 h-4" />
             <span>
-              {isRtl ? "العرض الهندسي المفكك" : "Engineering Exploded View"}
+              {td("title_badge")}
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-blue-950 leading-tight">

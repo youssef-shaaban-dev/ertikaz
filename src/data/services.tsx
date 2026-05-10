@@ -1,4 +1,4 @@
-import { Wind, Flame, Droplet } from "lucide-react";
+import { Wind, Flame, Droplet, Zap, Cpu } from "lucide-react";
 
 export interface Feature {
   titleAr: string;
@@ -24,7 +24,7 @@ export interface Category {
   descAr: string;
   descEn: string;
   image: string;
-  iconName: "hvac" | "fire" | "plumbing";
+  iconName: "hvac" | "fire" | "plumbing" | "electrical" | "lowcurrent";
   subServices: SubService[];
 }
 
@@ -313,6 +313,110 @@ export const categories: Category[] = [
         ]
       }
     ]
+  },
+  {
+    id: "electrical",
+    titleAr: "الأعمال الكهربائية والإنارة",
+    titleEn: "Electrical & Lighting Works",
+    descAr: "توفير حلول كهربائية متكاملة تشمل لوحات توزيع الطاقة، والأنظمة الكهربائية الخاصة بالإنارة، والمعدات الكهربائية المتطورة.",
+    descEn: "Providing comprehensive electrical solutions including distribution boards, specialized lighting systems, and advanced power gear.",
+    image: "https://images.unsplash.com/photo-1621905252507-b354bcadc014?auto=format&fit=crop&w=1200&q=80",
+    iconName: "electrical",
+    subServices: [
+      {
+        id: "power_distribution",
+        titleAr: "لوحات وأنظمة توزيع الطاقة",
+        titleEn: "Power Distribution Systems",
+        descAr: "تركيب واختبار لوحات التوزيع الرئيسية والفرعية المعتمدة مع كابلات التحميل العالي والتأريض الآمن.",
+        descEn: "Installation and testing of main & sub-distribution boards with high-load cabling and secure grounding.",
+        image: "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800&q=80",
+        features: [
+          {
+            titleAr: "توزيع أحمال متزن",
+            titleEn: "Balanced Load Distribution",
+            descAr: "توزيع هندسي دقيق للأحمال الكهربائية لمنع انقطاع التيار وحماية الكابلات من الحرارة الزائدة.",
+            descEn: "Precise engineering design to balance loads, preventing outages and protecting main cables."
+          },
+          {
+            titleAr: "لوحات معتمدة SASO",
+            titleEn: "SASO Certified Panels",
+            descAr: "استخدام لوحات وقواطع كهربائية من شركات عالمية معتمدة ومطابقة للمواصفات السعودية والمحلية.",
+            descEn: "Utilizing global certified breakers and panels matching strict local regulations."
+          },
+          {
+            titleAr: "أنظمة تأريض آمنة",
+            titleEn: "Advanced Earthing Grids",
+            descAr: "تأسيس شبكات تأريض فائقة الحماية لمنع التسرب الكهربائي وتفريغ الصواعق بأمان.",
+            descEn: "Installing protective grounding grids ensuring safe discharge and absolute personal safety."
+          }
+        ]
+      },
+      {
+        id: "smart_lighting",
+        titleAr: "تصميم وتوريد شبكات الإنارة",
+        titleEn: "Lighting Design & Networks",
+        descAr: "تركيب أنظمة الإضاءة الذكية والإنارة المخفية والخارجية المتطورة الموفرة للطاقة.",
+        descEn: "Installation of energy-efficient architectural lighting, LED tracks, and intelligent external floodlighting.",
+        image: "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?auto=format&fit=crop&w=800&q=80",
+        features: [
+          {
+            titleAr: "إنارة جمالية موفرة LED",
+            titleEn: "Aesthetic LED Lighting",
+            descAr: "توزيع إنارة مدروس يسلط الضوء على جماليات المباني والديكور باستهلاك طاقة أدنى.",
+            descEn: "Strategically distributed LED setups that enhance visual aesthetics with minimum watts."
+          },
+          {
+            titleAr: "أنظمة تحكم خافت Dimmers",
+            titleEn: "Dimmer Control Grids",
+            descAr: "تركيب وحدات تحكم رقمية تتيح ضبط شدة ودرجة حرارة الضوء بلمسة واحدة.",
+            descEn: "Deploying digital dimmer modules letting occupants adjust brightness instantly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "low_current",
+    titleAr: "أعمال التيار الخفيف والأتمتة",
+    titleEn: "Low Current & Smart Systems",
+    descAr: "تصميم وتنفيذ أنظمة التحكم بالمباني الذكية، كاميرات المراقبة CCTV، أنظمة الدخول والتحكم، بالإضافة إلى تحسين الاتصالات.",
+    descEn: "Design and build of smart home control, CCTV networks, biometric access control, and optimized data infrastructures.",
+    image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+    iconName: "lowcurrent",
+    subServices: [
+      {
+        id: "cctv_monitoring",
+        titleAr: "كاميرات المراقبة CCTV",
+        titleEn: "IP CCTV & Surveillance",
+        descAr: "تركيب أنظمة المراقبة عالية الدقة IP Cameras والربط بالشبكة للوصول عن بعد.",
+        descEn: "Deployment of Ultra HD IP camera systems connected to centralized cloud grids for remote monitoring.",
+        image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+        features: [
+          {
+            titleAr: "رؤية ليلية ذكية",
+            titleEn: "Smart Night Vision",
+            descAr: "تصوير ملون واضح تماماً حتى في حالات الإظلام التام بفضل مستشعرات StarLight.",
+            descEn: "Color recording even in pitch black environments utilizing high-grade sensors."
+          }
+        ]
+      },
+      {
+        id: "smart_buildings",
+        titleAr: "أنظمة التحكم والمباني الذكية",
+        titleEn: "Smart Building Automation",
+        descAr: "ربط كامل لمكونات المنزل أو المنشأة بشبكة واحدة تتيح التحكم الآلي والمناخي من الجوال.",
+        descEn: "Unified automated grids connecting household electronics, climate, and shading for mobile management.",
+        image: "https://images.unsplash.com/photo-1585909693682-7a8c37b941d1?auto=format&fit=crop&w=800&q=80",
+        features: [
+          {
+            titleAr: "أتمتة التكييف والإضاءة",
+            titleEn: "AC & Light Automation",
+            descAr: "إطفاء وتشغيل آلي للكهرباء حسب مستشعرات الحركة والحضور البشري.",
+            descEn: "Occupancy sensing for intelligent automated on/off states for lights and AC."
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -324,6 +428,10 @@ export function getIcon(iconName: string) {
       return <Flame className="w-8 h-8" />;
     case "plumbing":
       return <Droplet className="w-8 h-8" />;
+    case "electrical":
+      return <Zap className="w-8 h-8" />;
+    case "lowcurrent":
+      return <Cpu className="w-8 h-8" />;
     default:
       return <Wind className="w-8 h-8" />;
   }
