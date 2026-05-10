@@ -29,7 +29,7 @@ export default function CatalogSection({ locale }: SectionProps) {
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-blue-950 tracking-tight">
-            {isRtl ? "خدماتنا المتميزة" : "Our Specialized Services"}
+            {isRtl ? "خدماتنا" : "Our Services"}
           </h2>
           <p className="text-blue-900/60 text-base sm:text-lg max-w-2xl mx-auto font-semibold leading-relaxed">
             {isRtl 

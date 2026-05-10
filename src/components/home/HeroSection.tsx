@@ -80,21 +80,6 @@ export default function HeroSection({ locale }: SectionProps) {
             {t("subtitle")}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-            <Link
-              href={`/${locale}#contact`}
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white font-black transition-all shadow-lg flex items-center justify-center gap-2"
-            >
-              <span>{t("cta_primary")}</span>
-              <ArrowRight className={`w-4 h-4 ${isRtl ? "rotate-180" : ""}`} />
-            </Link>
-            <Link
-              href={`/${locale}#services`}
-              className="w-full sm:w-auto px-8 py-4 rounded-full border border-sky-200 bg-white hover:bg-sky-50 text-blue-800 font-extrabold transition-all flex items-center justify-center"
-            >
-              {t("cta_secondary")}
-            </Link>
-          </div>
 
           {/* Quick scope icons */}
           <div className="pt-6 border-t border-sky-100 grid grid-cols-2 sm:grid-cols-4 gap-4">

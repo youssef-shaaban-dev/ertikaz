@@ -91,12 +91,14 @@ export default function HeaderSection({ locale }: SectionProps) {
             </button>
 
             {/* Direct Contact Button */}
-            <Link
-              href={`/${locale}#contact`}
+            <a
+              href="https://wa.me/966509815516"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden md:flex px-6 py-2.5 text-xs sm:text-sm font-black rounded-full bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white transition-all shadow-md shadow-blue-500/10 hover:scale-[1.02]"
             >
-              {t("cta_primary")}
-            </Link>
+              {isRtl ? "تواصل معنا" : "Contact Us"}
+            </a>
 
             {/* Mobile Hamburger Toggle */}
             <button
@@ -162,14 +164,16 @@ export default function HeaderSection({ locale }: SectionProps) {
           </nav>
 
           <div className="pt-4 border-t border-sky-100 flex flex-col gap-3">
-            <Link
-              href={`/${locale}#contact`}
+            <a
+              href="https://wa.me/966509815516"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 text-white font-black text-center text-sm shadow-md flex items-center justify-center gap-2"
             >
-              <span>{t("cta_primary")}</span>
+              <span>{isRtl ? "تواصل معنا" : "Contact Us"}</span>
               <ArrowRight className={`w-4 h-4 ${isRtl ? "rotate-180" : ""}`} />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -60,7 +60,7 @@ export default function AboutSection({ locale }: SectionProps) {
               href={`/${locale}#services`}
               className="inline-block px-8 py-3 bg-[#54c4f3] hover:bg-[#3db3e6] text-white font-extrabold text-sm rounded-full transition-all hover:scale-105 shadow-md shadow-[#54c4f3]/20"
             >
-              {isRtl ? "عرض المزيد" : "View More"}
+              {isRtl ? "خدماتنا" : "Our Services"}
             </Link>
           </div>
         </div>
