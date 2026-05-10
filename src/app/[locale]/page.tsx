@@ -5,6 +5,7 @@ import PhilosophyGrid from "@/components/home/PhilosophyGrid";
 import CatalogSection from "@/components/home/CatalogSection";
 import ProjectsSection from "@/components/home/ProjectsSection";
 import StatsSection from "@/components/home/StatsSection";
+import CtaSection from "@/components/home/CtaSection";
 
 export default async function Page() {
   return (
@@ -15,6 +16,7 @@ export default async function Page() {
       <PhilosophyGrid />
       <CatalogSection />
       <ProjectsSection />
+      <CtaSection />
       <StatsSection />
     </main>
   );

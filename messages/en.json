@@ -154,5 +154,13 @@
     "title": "Our Services",
     "desc": "Comprehensive electromechanical and cooling solutions designed under the highest engineering standards.",
     "explore": "Explore Sub-services"
+  },
+  "CTA": {
+    "badge": "CONTACT US TODAY",
+    "title": "Ready to launch your next landmark project?",
+    "desc": "Our crew is fully set to administer architectural deployments and detailed engineering consultations at prime quality scales.",
+    "btn_wa": "Connect via WhatsApp",
+    "btn_mail": "Send Email Enquiry",
+    "hours": "Available during working hours"
   }
 }

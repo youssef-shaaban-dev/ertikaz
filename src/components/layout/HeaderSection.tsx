@@ -72,7 +72,7 @@ export default function HeaderSection({ locale }: SectionProps) {
               {t("nav_projects")}
             </Link>
             <Link
-              href={`/${locale}#contact`}
+              href={`/${locale}#cta-contact`}
               className="px-3.5 py-1.5 hover:bg-sky-50/70 hover:text-blue-600 rounded-full transition-all"
             >
               {t("nav_contact")}
@@ -90,15 +90,13 @@ export default function HeaderSection({ locale }: SectionProps) {
               <span>{t("toggle_lang")}</span>
             </button>
 
-            {/* Direct Contact Button */}
-            <a
-              href="https://wa.me/966509815516"
-              target="_blank"
-              rel="noopener noreferrer"
+            {/* Direct Contact Button rerouted to Cta section */}
+            <Link
+              href={`/${locale}#cta-contact`}
               className="hidden md:flex px-6 py-2.5 text-xs sm:text-sm font-black rounded-full bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white transition-all shadow-md shadow-blue-500/10 hover:scale-[1.02]"
             >
               {isRtl ? "تواصل معنا" : "Contact Us"}
-            </a>
+            </Link>
 
             {/* Mobile Hamburger Toggle */}
             <button
@@ -155,7 +153,7 @@ export default function HeaderSection({ locale }: SectionProps) {
               {t("nav_projects")}
             </Link>
             <Link
-              href={`/${locale}#contact`}
+              href={`/${locale}#cta-contact`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="py-2.5 px-4 hover:bg-sky-50/60 hover:text-blue-600 rounded-2xl transition-all"
             >
@@ -164,16 +162,14 @@ export default function HeaderSection({ locale }: SectionProps) {
           </nav>
 
           <div className="pt-4 border-t border-sky-100 flex flex-col gap-3">
-            <a
-              href="https://wa.me/966509815516"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href={`/${locale}#cta-contact`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 text-white font-black text-center text-sm shadow-md flex items-center justify-center gap-2"
             >
               <span>{isRtl ? "تواصل معنا" : "Contact Us"}</span>
               <ArrowRight className={`w-4 h-4 ${isRtl ? "rotate-180" : ""}`} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
