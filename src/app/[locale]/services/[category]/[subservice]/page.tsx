@@ -176,6 +176,45 @@ export default async function SubServicePage({
             </div>
           </div>
         </div>
+
+        {/* Enhanced Systems Taxonomy Lists */}
+        {subService.systems && subService.systems.length > 0 && (
+          <div className="mt-16 sm:mt-24 border-t border-sky-100 pt-16">
+            <div className="flex items-center gap-3 mb-10 rtl:flex-row ltr:flex-row-reverse rtl:justify-start ltr:justify-end">
+              <h3 className="text-2xl sm:text-3xl font-black text-blue-950">
+                {isRtl ? "الأنظمة والمكونات التفصيلية المشمولة" : "Detailed Systems & Components Covered"}
+              </h3>
+              <div className="w-2 h-8 bg-blue-600 rounded-full" />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {subService.systems.map((sys, idx) => (
+                <div 
+                  key={idx} 
+                  className="bg-white/60 backdrop-blur-sm border border-sky-100 hover:border-blue-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group flex flex-col text-right rtl:text-right ltr:text-left"
+                >
+                  {/* Top glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-blue-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl -z-10" />
+                  
+                  <h4 className="text-lg font-black text-blue-950 border-b border-sky-100 pb-4 mb-5 group-hover:text-blue-700 transition-colors">
+                    {isRtl ? sys.titleAr : sys.titleEn}
+                  </h4>
+
+                  <ul className="space-y-3 flex-grow">
+                    {(isRtl ? sys.itemsAr : sys.itemsEn).map((item, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm text-slate-600 hover:text-slate-950 transition-colors duration-300">
+                        <div className="w-5 h-5 rounded-full bg-sky-50 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5 border border-sky-100 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-xs">
+                          <span className="w-1.5 h-1.5 bg-current rounded-full" />
+                        </div>
+                        <span className="font-semibold leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
     </main>
   );

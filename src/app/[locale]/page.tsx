@@ -2,6 +2,7 @@ import HeroSection from "@/components/home/HeroSection";
 import ClientsSection from "@/components/home/ClientsSection";
 import AboutSection from "@/components/home/AboutSection";
 import PhilosophyGrid from "@/components/home/PhilosophyGrid";
+import CapabilitiesSection from "@/components/home/CapabilitiesSection";
 import CatalogSection from "@/components/home/CatalogSection";
 import ProjectsSection from "@/components/home/ProjectsSection";
 import StatsSection from "@/components/home/StatsSection";
@@ -14,6 +15,7 @@ export default async function Page() {
       <ClientsSection />
       <AboutSection />
       <PhilosophyGrid />
+      <CapabilitiesSection />
       <CatalogSection />
       <ProjectsSection />
       <CtaSection />
