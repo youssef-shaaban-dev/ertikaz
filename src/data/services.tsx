@@ -210,7 +210,7 @@ export const categories: Category[] = [
     titleEn: "Fire Fighting & Protection Systems",
     descAr: "تصميم وتوريد وتركيب شبكات الإطفاء المائية والغازية المتكاملة وكشف الإنذار المبكر المعتمدة من الدفاع المدني السعودي وهيئة UL/FM.",
     descEn: "Turnkey installation of water-based, clean gas suppression grids and high-sensitivity fire alarms approved by Civil Defense and UL/FM standards.",
-    image: "https://images.unsplash.com/photo-1599740831664-d62f6b3e71d3?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1606206591513-bc8586896b6f?auto=format&fit=crop&w=1200&q=80",
     iconName: "fire",
     subServices: [
       {
@@ -540,7 +540,7 @@ export const categories: Category[] = [
     titleEn: "Electrical & Extra Low Voltage (ELV) Systems",
     descAr: "تأسيس وتوزيع الطاقة الكهربائية والإنارة الذكية والطاقة البديلة، بالإضافة إلى الأنظمة الأمنية المتطورة وشبكات الاتصالات وأتمتة المباني الحديثة.",
     descEn: "Erecting power distribution networks, architectural smart lighting, along with advanced integrated security, communication, and smart building automation.",
-    image: "https://images.unsplash.com/photo-1621905252507-b354bcadc014?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1601597111158-2fceff270190?auto=format&fit=crop&w=1200&q=80",
     iconName: "electrical",
     subServices: [
       {
