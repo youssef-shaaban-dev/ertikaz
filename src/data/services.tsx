@@ -339,7 +339,7 @@ export const categories: Category[] = [
   },
   {
     id: "plumbing",
-    titleAr: "الأعمال المائية والشبكات الصحية وتمديدات الغاز",
+    titleAr: "الأعمال الصحية والسباكة وتمديدات الغاز",
     titleEn: "Plumbing, Sanitary Works & Gas Systems",
     descAr: "نغطي أعمال تغذية المياه النظيفة، شبكات الصرف المتطورة، معالجة المياه، تمديدات الغاز المركزي، والأنظمة الميكانيكية الصناعية الدقيقة.",
     descEn: "We cover clean water supply infrastructure, robust drainage networks, water treatment, central gas pipeline distribution, and heavy industrial mechanics.",
