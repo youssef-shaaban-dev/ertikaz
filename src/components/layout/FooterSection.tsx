@@ -69,17 +69,22 @@ export default function FooterSection({ locale }: SectionProps) {
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-blue-600" />
-              <a href="tel:+966114998895" className="hover:text-blue-600">
-                +966114998895
+              <a href="tel:+966596940453" className="hover:text-blue-600" dir="ltr">
+                +966 59 694 0453
               </a>
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-blue-600" />
-              <span>
+              <a 
+                href="https://maps.google.com/?q=Riyadh+Saudi+Arabia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 underline underline-offset-4 decoration-blue-300 hover:decoration-blue-600 transition-colors"
+              >
                 {isRtl
                   ? "الرياض، المملكة العربية السعودية"
                   : "Riyadh, Saudi Arabia"}
-              </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -121,23 +126,20 @@ export default function FooterSection({ locale }: SectionProps) {
           </ul>
         </div>
 
-        <div className="space-y-4 font-semibold text-xs">
+        <div className="space-y-4 text-xs">
           <h4 className="font-extrabold text-blue-950 uppercase tracking-wider text-xs">
-            {isRtl ? "ماركات التكييف المعتمدة" : "Authorized brands"}
+            {isRtl ? "موقعنا على الخريطة" : "OUR LOCATION"}
           </h4>
-          <div className="grid grid-cols-2 gap-2 text-[10px] text-center uppercase tracking-widest text-sky-600">
-            <div className="p-2 border border-sky-100 rounded bg-white font-extrabold">
-              DAIKIN
-            </div>
-            <div className="p-2 border border-sky-100 rounded bg-white font-extrabold">
-              CARRIER
-            </div>
-            <div className="p-2 border border-sky-100 rounded bg-white font-extrabold">
-              GREE
-            </div>
-            <div className="p-2 border border-sky-100 rounded bg-white font-extrabold">
-              TRANE
-            </div>
+          <div className="flex items-center gap-2 font-semibold">
+            <MapPin className="w-4 h-4 text-blue-600 shrink-0" />
+            <a
+              href="https://maps.google.com/?q=Riyadh+Saudi+Arabia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-700 font-extrabold underline underline-offset-4 decoration-blue-300 hover:decoration-blue-600 transition-colors"
+            >
+              {isRtl ? "الرياض - المملكة العربية السعودية" : "Riyadh - Saudi Arabia"}
+            </a>
           </div>
         </div>
       </div>

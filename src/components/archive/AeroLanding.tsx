@@ -943,8 +943,8 @@ function FooterSection({ isRtl, t }: TranslationProps) {
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-blue-600" />
-              <a href="tel:0114998895" className="hover:text-blue-600">
-                0114998895
+              <a href="tel:+966596940453" className="hover:text-blue-600">
+                +966 59 694 0453
               </a>
             </li>
             <li className="flex items-center gap-2">
