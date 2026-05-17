@@ -129,7 +129,7 @@ export default function ClientsSection() {
   const marqueeClients = [...clients, ...clients, ...clients];
 
   return (
-    <section className="py-16 bg-white border-b border-sky-50 relative z-20 overflow-hidden">
+    <section className="py-10 bg-white border-b border-sky-50 relative z-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-10 text-center">
         <h3 className="text-2xl sm:text-3xl font-black text-blue-950 tracking-tight relative inline-block">
           {t("header_title")}
