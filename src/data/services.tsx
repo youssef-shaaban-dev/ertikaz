@@ -43,7 +43,7 @@ export const categories: Category[] = [
     titleEn: "Mechanical Works - HVAC Systems",
     descAr: "حلول متكاملة لتصميم وتوريد وتركيب أنظمة التكييف المباشر والمياه المبردة وأنظمة VRF الذكية ومجاري الهواء وفقاً لأعلى الكفاءات الطاقية.",
     descEn: "Comprehensive solutions for the design, supply, and installation of DX systems, chilled water, VRF, and air distribution with optimal energy efficiency.",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/services/hvac.png",
     iconName: "hvac",
     subServices: [
       {
@@ -210,7 +210,7 @@ export const categories: Category[] = [
     titleEn: "Fire Fighting & Protection Systems",
     descAr: "تصميم وتوريد وتركيب شبكات الإطفاء المائية والغازية المتكاملة وكشف الإنذار المبكر المعتمدة من الدفاع المدني السعودي وهيئة UL/FM.",
     descEn: "Turnkey installation of water-based, clean gas suppression grids and high-sensitivity fire alarms approved by Civil Defense and UL/FM standards.",
-    image: "https://images.unsplash.com/photo-1606206591513-bc8586896b6f?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/services/fire_protection.png",
     iconName: "fire",
     subServices: [
       {
@@ -259,7 +259,7 @@ export const categories: Category[] = [
         titleEn: "Clean Agent & Special Suppression",
         descAr: "حلول الإخماد الذكي للمناطق الحساسة كالخوادم وغرف الكهرباء التي تمنع استخدام المياه تفادياً لتلف المعدات.",
         descEn: "Smart suppression technology tailored for sensitive zones like data centers and LV rooms where water causes equipment damage.",
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
         features: [
           {
             titleAr: "إخماد فوري بدون رطوبة",
@@ -343,7 +343,7 @@ export const categories: Category[] = [
     titleEn: "Plumbing & Sanitary Works",
     descAr: "نغطي أعمال تغذية المياه النظيفة، شبكات الصرف المتطورة، أنظمة تصريف السيول، ومعالجة المياه وتحليتها وفقاً لأعلى المعايير الصحية.",
     descEn: "We cover clean water supply infrastructure, robust drainage networks, storm water management, and high-efficiency water treatment systems.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/services/plumbing.png",
     iconName: "plumbing",
     subServices: [
       {
@@ -466,7 +466,7 @@ export const categories: Category[] = [
     titleEn: "Gas (LPG) & Medical Gas (MG) Systems",
     descAr: "تصميم وتوريد وتركيب شبكات الغاز البترولي المسال (LPG)، شبكات الغاز الطبيعي، وأنظمة الغازات الطبية (MG) المتكاملة للمستشفيات والمنشآت التجارية والصناعية.",
     descEn: "Design, supply, and installation of Liquefied Petroleum Gas (LPG) networks, Natural Gas pipelines, and certified Medical Gas (MG) systems for healthcare, commercial, and industrial facilities.",
-    image: "https://images.unsplash.com/photo-1581094271901-8022ec446665?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/services/gas_systems.png",
     iconName: "gas",
     subServices: [
       {
@@ -551,7 +551,7 @@ export const categories: Category[] = [
     titleEn: "Electrical & Extra Low Voltage (ELV) Systems",
     descAr: "تأسيس وتوزيع الطاقة الكهربائية والإنارة الذكية والطاقة البديلة، بالإضافة إلى الأنظمة الأمنية المتطورة وشبكات الاتصالات وأتمتة المباني الحديثة.",
     descEn: "Erecting power distribution networks, architectural smart lighting, along with advanced integrated security, communication, and smart building automation.",
-    image: "https://images.unsplash.com/photo-1601597111158-2fceff270190?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/services/electrical.png",
     iconName: "electrical",
     subServices: [
       {
