@@ -12,6 +12,53 @@ export default function CatalogSection() {
   const locale = useLocale();
   const isRtl = locale === "ar";
 
+  const renderCard = (category: typeof categories[0], isSecondRow = false) => (
+    <Link 
+      key={category.id}
+      href={`/${locale}/services/${category.id}`}
+      className={`group relative rounded-[2rem] overflow-hidden bg-white border border-sky-100/80 shadow-md hover:shadow-2xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between h-[460px] w-full ${isSecondRow ? 'lg:w-[calc(33.33%-1.75rem)]' : ''}`}
+    >
+      {/* Category Image */}
+      <div className="relative w-full h-[200px] overflow-hidden bg-slate-100 flex-shrink-0">
+        <Image
+          src={category.image}
+          alt={isRtl ? category.titleAr : category.titleEn}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          sizes="(max-w-768px) 100vw, 33vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-950/70 via-blue-950/10 to-transparent" />
+        
+        {/* Glowing Floating Icon in corner */}
+        <div className="absolute bottom-4 rtl:left-4 ltr:right-4 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-sky-500 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 border-2 border-white z-10">
+          {getIcon(category.iconName)}
+        </div>
+      </div>
+
+      {/* Card Content */}
+      <div className="p-6 flex-grow flex flex-col justify-between">
+        <div className="space-y-3">
+          <h3 className="text-xl sm:text-2xl font-black text-blue-950 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
+            {isRtl ? category.titleAr : category.titleEn}
+          </h3>
+          <p className="text-blue-900/60 text-sm leading-relaxed font-semibold line-clamp-3">
+            {isRtl ? category.descAr : category.descEn}
+          </p>
+        </div>
+
+        <div className="flex items-center justify-between pt-4 border-t border-sky-50 mt-4">
+          <span className="text-xs font-bold text-sky-600 group-hover:text-blue-600 transition-colors">
+            {t("explore")}
+          </span>
+          <div className="w-8 h-8 rounded-full bg-sky-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 transform rtl:group-hover:-translate-x-1.5 ltr:group-hover:translate-x-1.5 shadow-sm">
+            {isRtl ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+
   return (
     <section id="services" className="py-24 sm:py-32 bg-linear-to-b from-[#f0f8ff] via-[#ffffff] to-[#e8f4fd] border-y border-sky-100 relative z-20 overflow-hidden">
       {/* Decorative dynamic background circles */}
@@ -32,53 +79,17 @@ export default function CatalogSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10">
-          {categories.map((category) => (
-            <Link 
-              key={category.id}
-              href={`/${locale}/services/${category.id}`}
-              className="group relative rounded-[2rem] overflow-hidden bg-white border border-sky-100/80 shadow-md hover:shadow-2xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-500 flex flex-col md:flex-row text-right rtl:text-right ltr:text-left h-auto md:h-[280px]"
-            >
-              {/* Category Image */}
-              <div className="relative w-full md:w-[42%] h-[200px] md:h-full overflow-hidden bg-slate-100 flex-shrink-0">
-                <Image
-                  src={category.image}
-                  alt={isRtl ? category.titleAr : category.titleEn}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-w-768px) 100vw, 25vw"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-950/70 via-blue-950/10 to-transparent" />
-                
-                {/* Glowing Floating Icon in corner */}
-                <div className="absolute bottom-4 rtl:left-4 ltr:right-4 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-sky-500 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 border-2 border-white z-10">
-                  {getIcon(category.iconName)}
-                </div>
-              </div>
+        {/* 3 + 2 Grid Layout for perfect visual balance */}
+        <div className="space-y-8 sm:space-y-10">
+          {/* First Row: 3 Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+            {categories.slice(0, 3).map((cat) => renderCard(cat, false))}
+          </div>
 
-              {/* Card Content */}
-              <div className="p-6 sm:p-8 flex-grow flex flex-col justify-between">
-                <div className="space-y-3">
-                  <h3 className="text-xl sm:text-2xl font-black text-blue-950 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
-                    {isRtl ? category.titleAr : category.titleEn}
-                  </h3>
-                  <p className="text-blue-900/60 text-sm sm:text-base leading-relaxed font-semibold line-clamp-3">
-                    {isRtl ? category.descAr : category.descEn}
-                  </p>
-                </div>
-
-                <div className="flex items-center justify-between pt-4 border-t border-sky-50 mt-4">
-                  <span className="text-xs font-bold text-sky-600 group-hover:text-blue-600 transition-colors">
-                    {t("explore")}
-                  </span>
-                  <div className="w-8 h-8 rounded-full bg-sky-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 transform rtl:group-hover:-translate-x-1.5 ltr:group-hover:translate-x-1.5 shadow-sm">
-                    {isRtl ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
-                  </div>
-                </div>
-              </div>
-            </Link>
-          ))}
+          {/* Second Row: 2 Cards (Centered on large screens) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-center gap-8 sm:gap-10">
+            {categories.slice(3, 5).map((cat) => renderCard(cat, true))}
+          </div>
         </div>
       </div>
     </section>

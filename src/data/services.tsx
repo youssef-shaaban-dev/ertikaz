@@ -1,4 +1,4 @@
-import { Wind, Flame, Droplet, Zap, Cpu } from "lucide-react";
+import { Wind, Flame, Droplet, Zap, Cpu, Gauge } from "lucide-react";
 
 export interface Feature {
   titleAr: string;
@@ -32,7 +32,7 @@ export interface Category {
   descAr: string;
   descEn: string;
   image: string;
-  iconName: "hvac" | "fire" | "plumbing" | "electrical" | "lowcurrent";
+  iconName: "hvac" | "fire" | "plumbing" | "electrical" | "lowcurrent" | "gas";
   subServices: SubService[];
 }
 
@@ -339,10 +339,10 @@ export const categories: Category[] = [
   },
   {
     id: "plumbing",
-    titleAr: "الأعمال الصحية والسباكة وتمديدات الغاز",
-    titleEn: "Plumbing, Sanitary Works & Gas Systems",
-    descAr: "نغطي أعمال تغذية المياه النظيفة، شبكات الصرف المتطورة، معالجة المياه، تمديدات الغاز المركزي، والأنظمة الميكانيكية الصناعية الدقيقة.",
-    descEn: "We cover clean water supply infrastructure, robust drainage networks, water treatment, central gas pipeline distribution, and heavy industrial mechanics.",
+    titleAr: "الأعمال الصحية والسباكة",
+    titleEn: "Plumbing & Sanitary Works",
+    descAr: "نغطي أعمال تغذية المياه النظيفة، شبكات الصرف المتطورة، أنظمة تصريف السيول، ومعالجة المياه وتحليتها وفقاً لأعلى المعايير الصحية.",
+    descEn: "We cover clean water supply infrastructure, robust drainage networks, storm water management, and high-efficiency water treatment systems.",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
     iconName: "plumbing",
     subServices: [
@@ -457,7 +457,18 @@ export const categories: Category[] = [
             ]
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    id: "gas_systems",
+    titleAr: "أنظمة الغازات (LPG) والغازات الطبية (MG)",
+    titleEn: "Gas (LPG) & Medical Gas (MG) Systems",
+    descAr: "تصميم وتوريد وتركيب شبكات الغاز البترولي المسال (LPG)، شبكات الغاز الطبيعي، وأنظمة الغازات الطبية (MG) المتكاملة للمستشفيات والمنشآت التجارية والصناعية.",
+    descEn: "Design, supply, and installation of Liquefied Petroleum Gas (LPG) networks, Natural Gas pipelines, and certified Medical Gas (MG) systems for healthcare, commercial, and industrial facilities.",
+    image: "https://images.unsplash.com/photo-1581094271901-8022ec446665?auto=format&fit=crop&w=1200&q=80",
+    iconName: "gas",
+    subServices: [
       {
         id: "fuel_gas",
         titleAr: "أنظمة تمديدات الغاز المركزي والوقود",
@@ -498,8 +509,8 @@ export const categories: Category[] = [
       },
       {
         id: "special_mechanical",
-        titleAr: "الأنظمة الميكانيكية الصناعية والخاصة",
-        titleEn: "Industrial & Special Mechanical",
+        titleAr: "أنظمة الغازات الطبية (MG) والأنظمة الميكانيكية الخاصة",
+        titleEn: "Medical Gas (MG) & Special Mechanical Systems",
         descAr: "نمتلك الخبرة لتنفيذ شبكات الغازات الطبية في المستشفيات، الهواء المضغوط، غرف التبريد، وغرف الأبحاث المعتمدة.",
         descEn: "High-end execution of Medical Gas systems for hospitals, compressed air grids, large cold storages, and certified clean rooms.",
         image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
@@ -801,6 +812,8 @@ export function getIcon(iconName: string) {
       return <Zap className="w-8 h-8" />;
     case "lowcurrent":
       return <Cpu className="w-8 h-8" />;
+    case "gas":
+      return <Gauge className="w-8 h-8" />;
     default:
       return <Wind className="w-8 h-8" />;
   }
