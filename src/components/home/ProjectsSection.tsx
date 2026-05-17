@@ -14,9 +14,11 @@ export default function ProjectsSection() {
   const locale = useLocale();
   const isRtl = locale === "ar";
 
-  // Pick 3 flagship projects showing variety (Retail/Commercial, Industrial, Airport)
-  const featuredProjectIds = ["rosenthal-showroom-kingdom", "ceer-factory-rabigh", "airport-kkia-t5"];
-  const featuredProjects = projectsList.filter((p) => featuredProjectIds.includes(p.id));
+  // Pick 3 flagship projects in the exact order requested by the user
+  const featuredProjectIds = ["arasco-aviation-lounge", "airport-kkia-t5", "ceer-factory-rabigh"];
+  const featuredProjects = featuredProjectIds
+    .map((id) => projectsList.find((p) => p.id === id))
+    .filter((p): p is Project => p !== undefined);
 
   // Fallback to first 3 if ids don't match (safety measure)
   const homeProjects = featuredProjects.length === 3 ? featuredProjects : projectsList.slice(0, 3);
