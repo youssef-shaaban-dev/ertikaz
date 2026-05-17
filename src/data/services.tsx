@@ -536,10 +536,10 @@ export const categories: Category[] = [
   },
   {
     id: "electrical",
-    titleAr: "الأعمال الكهربائية والإنارة والطاقة البديلة",
-    titleEn: "Electrical, Lighting & Renewable Power",
-    descAr: "تصميم وتنفيذ البنية التحتية الكهربائية، وشبكات الجهد المنخفض والمتوسط، والإنارة المعمارية، وأنظمة الطاقة الشمسية المستدامة.",
-    descEn: "Expert design and installation of electrical grids, Low & Medium voltage networks, architectural lighting, and sustainable solar power solutions.",
+    titleAr: "الأعمال الكهربائية وأنظمة التيار الخفيف ELV",
+    titleEn: "Electrical & Extra Low Voltage (ELV) Systems",
+    descAr: "تأسيس وتوزيع الطاقة الكهربائية والإنارة الذكية والطاقة البديلة، بالإضافة إلى الأنظمة الأمنية المتطورة وشبكات الاتصالات وأتمتة المباني الحديثة.",
+    descEn: "Erecting power distribution networks, architectural smart lighting, along with advanced integrated security, communication, and smart building automation.",
     image: "https://images.unsplash.com/photo-1621905252507-b354bcadc014?auto=format&fit=crop&w=1200&q=80",
     iconName: "electrical",
     subServices: [
@@ -654,18 +654,7 @@ export const categories: Category[] = [
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    id: "low_current",
-    titleAr: "أعمال التيار الخفيف والأنظمة الذكية ELV",
-    titleEn: "Extra Low Voltage (ELV) & Smart Systems",
-    descAr: "تصميم وتركيب الأنظمة الأمنية، كاميرات المراقبة، بوابات الدخول، شبكات الاتصالات المتطورة، والتحكم الذكي عبر الـ BMS.",
-    descEn: "Integration of high-definition surveillance, biometric access, structured communications, and full central building management (BMS).",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
-    iconName: "lowcurrent",
-    subServices: [
+      },
       {
         id: "security_elv",
         titleAr: "الأنظمة الأمنية وكاميرات المراقبة",
