@@ -124,7 +124,7 @@ export default function PhilosophyGrid() {
                   </div>
                   <div className="text-right rtl:text-right ltr:text-left">
                     <div className="text-[14px] font-black text-blue-950">{t(`goal_${goal.key}_label`)}</div>
-                    <div className="text-[11px] font-bold text-slate-500 line-clamp-1">{t(`goal_${goal.key}_desc`)}</div>
+                    <div className="text-[11px] font-bold text-slate-500">{t(`goal_${goal.key}_desc`)}</div>
                   </div>
                 </div>
               ))}

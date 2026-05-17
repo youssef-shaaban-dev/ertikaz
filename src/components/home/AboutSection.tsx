@@ -88,7 +88,7 @@ export default function AboutSection() {
                     <h4 className="text-base font-black text-slate-900 mb-1 leading-tight group-hover:text-[#54c4f3] transition-colors">
                       {svc.title}
                     </h4>
-                    <p className="text-slate-500 text-[12px] font-bold leading-relaxed line-clamp-2">
+                    <p className="text-slate-500 text-[12px] font-bold leading-relaxed">
                       {svc.desc}
                     </p>
                   </div>
