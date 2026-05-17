@@ -879,7 +879,7 @@ function WhatsAppInquirySection({ isRtl }: { isRtl: boolean }) {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <a
-            href="https://wa.me/966509815516"
+            href="https://wa.me/966596940453"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-10 py-5 rounded-full bg-gradient-to-r from-emerald-50 to-emerald-500 hover:from-emerald-600 hover:to-green-700 hover:text-white text-emerald-700 hover:shadow-lg font-black text-lg border-2 border-emerald-300 transition-all shadow shadow-emerald-500/20 flex items-center justify-center gap-3 hover:scale-[1.02]"
@@ -1257,7 +1257,7 @@ export default function AeroLanding({ locale }: { locale: string }) {
 
       {/* Sticky floating green action button */}
       <a
-        href="https://wa.me/966509815516"
+        href="https://wa.me/966596940453"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center shadow-lg z-40 text-white hover:scale-105 transition-all"

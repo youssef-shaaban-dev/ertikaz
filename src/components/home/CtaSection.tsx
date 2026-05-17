@@ -57,7 +57,7 @@ export default function CtaSection() {
               
               {/* WhatsApp Priority Link */}
               <Link
-                href="https://wa.me/966509815516" 
+                href="https://wa.me/966596940453" 
                 target="_blank"
                 className="flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-sky-400 to-blue-500 hover:from-sky-300 hover:to-blue-400 text-white rounded-2xl font-black text-lg shadow-xl shadow-blue-500/20 hover:scale-[1.02] hover:shadow-sky-400/40 transition-all active:scale-95 group/btn"
               >
