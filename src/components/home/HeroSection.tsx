@@ -147,7 +147,7 @@ export default function HeroSection() {
           <div className="relative w-full h-[220px] sm:h-[300px] rounded-3xl overflow-hidden border-2 border-sky-100 shadow-[0_20px_50px_rgba(2,132,199,0.15)] bg-white p-4">
             <Image
               src="/modern_ac_unit.png"
-              alt="Ertikaz AC cooling system"
+              alt={th("alt_ac")}
               fill
               priority
               className="object-cover object-center"

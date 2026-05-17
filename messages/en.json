@@ -99,7 +99,8 @@
     "pill_hvac": "HVAC & Ventilation",
     "pill_plumb": "Sanitary & Plumbing",
     "pill_fire": "Fire Systems & Safety",
-    "pill_elec": "Smart Energy Grids"
+    "pill_elec": "Smart Energy Grids",
+    "alt_ac": "Ertikaz International AC cooling system"
   },
   "Clients": {
     "header_title": "Our Clients & Partners",
