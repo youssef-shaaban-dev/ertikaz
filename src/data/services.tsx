@@ -770,7 +770,7 @@ export const categories: Category[] = [
         titleEn: "Building Automation & BMS",
         descAr: "دمج أنظمة المبنى الميكانيكية والكهربائية في شاشة تحكم مركزية واحدة (BMS) وتأسيس الفلل والقصور الذكية.",
         descEn: "Converging mechanical and electrical systems into a unified dashboard (BMS) alongside ultra-premium smart home installs.",
-        image: "https://images.unsplash.com/photo-1585909693682-7a8c37b941d1?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/electrical_bms.png",
         features: [
           {
             titleAr: "تحكم كامل ومركزي بكبسة زر",
