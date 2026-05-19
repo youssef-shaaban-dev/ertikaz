@@ -219,7 +219,7 @@ export const categories: Category[] = [
         titleEn: "Water-Based Suppression & Pumps",
         descAr: "العمود الفقري لأنظمة مكافحة الحريق، تشمل الرشاشات وصناديق الحريق وغرف المضخات المعتمدة كلياً.",
         descEn: "The backbone of life safety, providing specialized automatic sprinklers, fire cabinets, and certified UL/FM pump packages.",
-        image: "https://images.unsplash.com/photo-1617470703128-26a0fc9af10f?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/fire_water_pumps.png",
         features: [
           {
             titleAr: "اعتمادات عالمية ومحلية",
@@ -259,7 +259,7 @@ export const categories: Category[] = [
         titleEn: "Clean Agent & Special Suppression",
         descAr: "حلول الإخماد الذكي للمناطق الحساسة كالخوادم وغرف الكهرباء التي تمنع استخدام المياه تفادياً لتلف المعدات.",
         descEn: "Smart suppression technology tailored for sensitive zones like data centers and LV rooms where water causes equipment damage.",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/fire_clean_gas.png",
         features: [
           {
             titleAr: "إخماد فوري بدون رطوبة",
@@ -301,7 +301,7 @@ export const categories: Category[] = [
         titleEn: "Fire Alarm & Life Safety Systems",
         descAr: "أنظمة ذكية للكشف المبكر عن الحريق وإصدار إشارات الإخلاء، مترابطة هندسياً مع أنظمة سحب الدخان والتكييف.",
         descEn: "Intelligent early fire sensing grids linked to evacuation alarms and interconnected with HVAC smoke extraction dampers.",
-        image: "https://images.unsplash.com/photo-1606201416391-7681cbe1ca4f?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/fire_alarm.png",
         features: [
           {
             titleAr: "تحديد دقيق لمكان الحريق",
