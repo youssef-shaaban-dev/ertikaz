@@ -18,9 +18,11 @@ export default function ProjectsPageClient({ locale }: { locale: string }) {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  // Derived state: Calculate filtered list dynamically on render
+  // Derived state: Calculate filtered list dynamically on render and deduplicate by title for the "All" view
   const filteredProjects = selectedCategory === "all"
-    ? projectsList
+    ? projectsList.filter((p, index, self) => 
+        self.findIndex(t => t.titleAr === p.titleAr) === index
+      )
     : projectsList.filter((p) => p.category === selectedCategory);
 
   // Lock body scroll on active modal to maintain scroll sanity
