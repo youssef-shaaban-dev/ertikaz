@@ -352,7 +352,7 @@ export const categories: Category[] = [
         titleEn: "Water Supply & Pumps",
         descAr: "تصميم وتركيب شبكات تغذية مياه الشرب، مع وحدات تعزيز الضغط الذكية ومحطات التسخين المركزي.",
         descEn: "Routing high-grade drinking water pipe networks combined with intelligent pressure boosters and centralized heating.",
-        image: "https://images.unsplash.com/photo-1542013936693-8848e574047a?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/plumbing_water_supply.png",
         features: [
           {
             titleAr: "مواد صحية 100% ومقاومة للحرارة",
@@ -392,7 +392,7 @@ export const categories: Category[] = [
         titleEn: "Drainage & Storm Water Systems",
         descAr: "تأسيس شبكات الصرف بالجاذبية، وعزل الروائح الكريهة، وتصريف مياه الأمطار بكفاءة للتصدي للتقلبات الجوية.",
         descEn: "Gravity-led drainage engineering ensuring complete odor isolation and stormwater networks that secure structures against storms.",
-        image: "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/plumbing_drainage.png",
         features: [
           {
             titleAr: "هندسة تدفق ذاتية التنظيف",
@@ -432,7 +432,7 @@ export const categories: Category[] = [
         titleEn: "Water Treatment & Purification",
         descAr: "توريد وإنشاء وحدات التحلية بالـ RO، وأنظمة التعقيم بالأشعة فوق البنفسجية وفلترة المياه الرمادية للمباني الخضراء.",
         descEn: "Assembly of Reverse Osmosis (RO) plants, Ultraviolet sterilization, and Grey Water reclaim systems for eco-friendly buildings.",
-        image: "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/plumbing_treatment.png",
         features: [
           {
             titleAr: "مياه فائقة النقاء للشرب والصناعة",
