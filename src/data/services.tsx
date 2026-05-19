@@ -52,7 +52,7 @@ export const categories: Category[] = [
         titleEn: "Cooling & AC Systems",
         descAr: "نقدم مجموعة متكاملة من حلول التكييف المركزي والمباشر وأنظمة تدفق التبريد المتغير VRF للمشاريع السكنية والتجارية والضخمة.",
         descEn: "We offer a complete range of central and direct expansion AC solutions alongside variable refrigerant flow (VRF) systems for residential, commercial, and industrial projects.",
-        image: "https://images.unsplash.com/photo-1585338111221-d4041667b9fc?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/hvac_cooling.png",
         features: [
           {
             titleAr: "تقنيات تبريد متنوعة",
@@ -126,7 +126,7 @@ export const categories: Category[] = [
         titleEn: "Air Distribution & Ductwork",
         descAr: "تصنيع وتركيب مجاري الهواء (الدكت) بمختلف أنواعها، مع عزل متقدم وموزعات هواء تضمن توزيعاً هادئاً ومتوازناً.",
         descEn: "Fabrication and installation of high-grade air ducts with robust insulation and specialized outlets for seamless, draft-free airflow.",
-        image: "https://images.unsplash.com/photo-1621905252507-b354bcadc014?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/hvac_ducts.png",
         features: [
           {
             titleAr: "تصميم هيدروليكي دقيق",
@@ -166,7 +166,7 @@ export const categories: Category[] = [
         titleEn: "Ventilation & Smoke Control",
         descAr: "تصميم وتنفيذ أنظمة التهوية الميكانيكية لمواقف السيارات والمطابخ، بجانب أنظمة سحب الدخان الذكية للحفاظ على الأرواح.",
         descEn: "Expert setup of mechanical ventilation for parking and kitchens alongside safety smoke extractors integrated with fire panels.",
-        image: "https://images.unsplash.com/photo-1596742572447-e1244491b14b?auto=format&fit=crop&w=800&q=80",
+        image: "/images/services/hvac_ventilation.png",
         features: [
           {
             titleAr: "أنظمة متكاملة مع الدفاع المدني",
