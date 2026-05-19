@@ -204,10 +204,10 @@ export const projectsList: Project[] = [
     locationEn: "Rabigh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/ceer.jpg",
+    mainImage: "/images/projects/ceer.png",
     images: [
       {
-        url: "/images/projects/ceer.jpg",
+        url: "/images/projects/ceer.png",
         captionAr: "أعمال التركيبات الكهربائية بمصنع CEER – رابغ",
         captionEn: "Electrical Installation Works for CEER Factory – Rabigh"
       }
@@ -370,10 +370,10 @@ export const projectsList: Project[] = [
     locationEn: "Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/sba.jpg",
+    mainImage: "/images/projects/sba.png",
     images: [
       {
-        url: "/images/projects/sba.jpg",
+        url: "/images/projects/sba.png",
         captionAr: "هيئة الإذاعة والتلفزيون – الرياض",
         captionEn: "Saudi Broadcasting Authority – Riyadh"
       }
