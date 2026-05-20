@@ -46,7 +46,7 @@ function HeaderSection({
       >
         <div className="relative w-11 h-11 rounded-xl overflow-hidden border border-sky-200 shadow bg-white flex items-center justify-center p-1 group-hover:scale-105 transition-transform">
           <Image
-            src="/ertikaz-logo.jpeg"
+            src="/logo.png"
             alt="Ertikaz Logo"
             width={40}
             height={40}
@@ -912,7 +912,7 @@ function FooterSection({ isRtl, t }: TranslationProps) {
           <div className="flex items-center gap-3 justify-start">
             <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-sky-200 shadow bg-white flex items-center justify-center p-1">
               <Image
-                src="/ertikaz-logo.jpeg"
+                src="/logo.png"
                 alt="Ertikaz Logo"
                 width={35}
                 height={35}

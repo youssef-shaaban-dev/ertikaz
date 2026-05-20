@@ -35,7 +35,7 @@ export default function HeaderSection({ locale }: SectionProps) {
           >
             <Link href={`/${locale}`} className="relative w-36 h-14 rounded-xl overflow-hidden border border-sky-100 shadow bg-white flex items-center justify-center p-1 group-hover:scale-105 transition-transform duration-300">
               <Image
-                src="/ertikaz-logo.jpeg"
+                src="/logo.png"
                 alt="Ertikaz Logo"
                 fill
                 priority
