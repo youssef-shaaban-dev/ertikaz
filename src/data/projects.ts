@@ -77,12 +77,17 @@ export const projectsList: Project[] = [
     locationEn: "Diriyah, Riyadh",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/diriyah.jpg",
+    mainImage: "/images/projects/diriyah-1.jpeg",
     images: [
       {
-        url: "/images/projects/diriyah.jpg",
+        url: "/images/projects/diriyah-1.jpeg",
         captionAr: "توريد وتركيب نظام تكييف VRF لفيلا سكنية",
         captionEn: "Supply & Installation of VRF Air Conditioning System for Residential Villa"
+      },
+      {
+        url: "/images/projects/diriyah-2.jpeg",
+        captionAr: "أعمال التكييف والتمديدات الداخلية للفيلا",
+        captionEn: "HVAC and internal piping works for the villa"
       }
     ]
   },
@@ -97,17 +102,17 @@ export const projectsList: Project[] = [
     locationEn: "Kingdom Tower, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/rosenthal-main.jpg",
+    mainImage: "/images/projects/rosenthal-1.jpeg",
     images: [
       {
-        url: "/images/projects/rosenthal-main.jpg",
+        url: "/images/projects/rosenthal-1.jpeg",
         captionAr: "معرض روزنتال – برج المملكة",
         captionEn: "Rosenthal Showroom – Kingdom Tower"
       },
       {
-        url: "/images/projects/rosenthal-extra.jpg",
-        captionAr: "شبكة متكاملة لإطفاء ومكافحة الحريق وأنظمة الإنذار",
-        captionEn: "Integrated fire alarm & firefighting loop"
+        url: "/images/projects/rosenthal-2.jpeg",
+        captionAr: "أنظمة التكييف ومكافحة الحريق وإنذار الحريق",
+        captionEn: "HVAC, fire fighting & fire alarm systems"
       }
     ]
   },
@@ -122,12 +127,17 @@ export const projectsList: Project[] = [
     locationEn: "Kingdom Tower, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/kidsarea.jpg",
+    mainImage: "/images/projects/kidsarea-1.jpeg",
     images: [
       {
-        url: "/images/projects/kidsarea.jpg",
-        captionAr: "منطقة الألعاب Kids Area – برج المملكة",
+        url: "/images/projects/kidsarea-1.jpeg",
+        captionAr: "منطقة الألعاب Kids Area (M Special) – برج المملكة",
         captionEn: "Kids Area (M Special) – Kingdom Tower"
+      },
+      {
+        url: "/images/projects/kidsarea-2.jpeg",
+        captionAr: "أعمال تركيب أنظمة التكييف ومكافحة الحريق",
+        captionEn: "Installation of HVAC and firefighting systems"
       }
     ]
   },
@@ -142,12 +152,17 @@ export const projectsList: Project[] = [
     locationEn: "Al Malaz, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/goldorbit.jpg",
+    mainImage: "/images/projects/goldorbit-1.jpeg",
     images: [
       {
-        url: "/images/projects/goldorbit.jpg",
+        url: "/images/projects/goldorbit-1.jpeg",
         captionAr: "معرض Gold Orbit – هايبر لولو",
         captionEn: "Gold Orbit Showroom – Lulu Hypermarket"
+      },
+      {
+        url: "/images/projects/goldorbit-2.jpeg",
+        captionAr: "توريد وتركيب نظام التكييف لمعرض Gold Orbit",
+        captionEn: "Supply & Installation of HVAC System for Gold Orbit Showroom"
       }
     ]
   },
@@ -162,12 +177,17 @@ export const projectsList: Project[] = [
     locationEn: "Al Sahafa District, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/balconia.jpg",
+    mainImage: "/images/projects/balconia-1.jpeg",
     images: [
       {
-        url: "/images/projects/balconia.jpg",
+        url: "/images/projects/balconia-1.jpeg",
         captionAr: "توريد وتركيب أنظمة التكييف لفندق بلكونيا",
         captionEn: "Supply & Installation of HVAC Systems for Balconia Hotel"
+      },
+      {
+        url: "/images/projects/balconia-2.jpeg",
+        captionAr: "أعمال التكييف والتمديدات الخارجية للفندق",
+        captionEn: "HVAC and external installations for the hotel"
       }
     ]
   },
@@ -184,12 +204,17 @@ export const projectsList: Project[] = [
     locationEn: "Saudi Arabia",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/badr-dairy.jpg",
+    mainImage: "/images/projects/badr-1.jpeg",
     images: [
       {
-        url: "/images/projects/badr-dairy.jpg",
+        url: "/images/projects/badr-1.jpeg",
         captionAr: "إحلال وتجديد وحدات التكييف بمصنع ألبان بدر",
         captionEn: "Replacement & Renovation of HVAC Units for Badr Dairy Factory"
+      },
+      {
+        url: "/images/projects/badr-2.jpeg",
+        captionAr: "تحديث وصيانة شبكات التكييف والتهوية بالمصنع",
+        captionEn: "Upgrading and maintaining air conditioning networks at the factory"
       }
     ]
   },
@@ -204,12 +229,17 @@ export const projectsList: Project[] = [
     locationEn: "Rabigh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/ceer.png",
+    mainImage: "/images/projects/ceer-1.webp",
     images: [
       {
-        url: "/images/projects/ceer.png",
+        url: "/images/projects/ceer-1.webp",
         captionAr: "أعمال التركيبات الكهربائية بمصنع CEER – رابغ",
         captionEn: "Electrical Installation Works for CEER Factory – Rabigh"
+      },
+      {
+        url: "/images/projects/ceer-2.webp",
+        captionAr: "لوحات التوزيع الكهربائية وتجهيزات المصنع",
+        captionEn: "Electrical distribution boards and factory setup"
       }
     ]
   },
@@ -266,12 +296,17 @@ export const projectsList: Project[] = [
     locationEn: "Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/kkia.jpg",
+    mainImage: "/images/projects/kkia-1.jpg",
     images: [
       {
-        url: "/images/projects/kkia.jpg",
+        url: "/images/projects/kkia-1.jpg",
         captionAr: "صالة 5 – مطار الملك خالد الدولي",
         captionEn: "Terminal 5 – King Khalid International Airport"
+      },
+      {
+        url: "/images/projects/kkia-2.jpeg",
+        captionAr: "تركيبات شبكة مكافحة الحريق وأنظمة التكييف بالصالة",
+        captionEn: "Firefighting and HVAC installation works at the terminal"
       }
     ]
   },
@@ -286,12 +321,17 @@ export const projectsList: Project[] = [
     locationEn: "Jeddah",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/arasco.jpg",
+    mainImage: "/images/projects/arasco-1.jpg",
     images: [
       {
-        url: "/images/projects/arasco.jpg",
+        url: "/images/projects/arasco-1.jpg",
         captionAr: "صالة طيران عرباسكو – مطار جدة الدولي",
         captionEn: "Arasco Aviation Lounge – Jeddah International Airport"
+      },
+      {
+        url: "/images/projects/arasco-2.jpeg",
+        captionAr: "توريد وتركيب أنظمة التكييف والتهوية بالصالة",
+        captionEn: "Supply & Installation of HVAC & Ventilation Systems for the Lounge"
       }
     ]
   },
@@ -370,12 +410,17 @@ export const projectsList: Project[] = [
     locationEn: "Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/sba.png",
+    mainImage: "/images/projects/sba-1.jpeg",
     images: [
       {
-        url: "/images/projects/sba.png",
+        url: "/images/projects/sba-1.jpeg",
         captionAr: "هيئة الإذاعة والتلفزيون – الرياض",
         captionEn: "Saudi Broadcasting Authority – Riyadh"
+      },
+      {
+        url: "/images/projects/sba-2.jpeg",
+        captionAr: "توريد وتركيب أنظمة التكييف بصالة السمنار وغرف التحكم",
+        captionEn: "Supply & Installation of HVAC Systems for Seminar Hall & Control Rooms"
       }
     ]
   },
@@ -392,12 +437,17 @@ export const projectsList: Project[] = [
     locationEn: "Saudi Arabia",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/taiba.jpg",
+    mainImage: "/images/projects/taiba-1.jpeg",
     images: [
       {
-        url: "/images/projects/taiba.jpg",
+        url: "/images/projects/taiba-1.jpeg",
         captionAr: "توريد وتركيب أنظمة التكييف والتهوية بمستودعات طيبة",
         captionEn: "Supply & Installation of HVAC & Ventilation Systems for Taiba Warehouses"
+      },
+      {
+        url: "/images/projects/taiba-2.jpeg",
+        captionAr: "أعمال التكييف والتمديدات الهوائية بالمستودعات",
+        captionEn: "HVAC and ducting installation at the warehouses"
       }
     ]
   }

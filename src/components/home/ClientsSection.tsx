@@ -123,6 +123,83 @@ export default function ClientsSection() {
           </text>
         </svg>
       )
+    },
+    {
+      id: "ceer",
+      name: t("ceer"),
+      logo: (
+        <img
+          src="/images/Clients-Logo/CEER_-_English_Logo.png"
+          alt="CEER Logo"
+          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+        />
+      )
+    },
+    {
+      id: "arabasco",
+      name: t("arabasco"),
+      logo: (
+        <img
+          src="/images/Clients-Logo/images (1).png"
+          alt="Arabasco Logo"
+          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+        />
+      )
+    },
+    {
+      id: "gravity",
+      name: t("gravity"),
+      logo: (
+        <img
+          src="/images/Clients-Logo/2025-10-03.jpg"
+          alt="Gravity Media Logo"
+          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+        />
+      )
+    },
+    {
+      id: "fgc",
+      name: t("fgc"),
+      logo: (
+        <img
+          src="/images/Clients-Logo/images.png"
+          alt="FGC Logo"
+          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+        />
+      )
+    },
+    {
+      id: "mbl",
+      name: t("mbl"),
+      logo: (
+        <img
+          src="/images/Clients-Logo/download.png"
+          alt="MBL Logo"
+          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+        />
+      )
+    },
+    {
+      id: "icad",
+      name: t("icad"),
+      logo: (
+        <img
+          src="/images/Clients-Logo/download.webp"
+          alt="ICAD Logo"
+          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+        />
+      )
+    },
+    {
+      id: "iwatt",
+      name: t("iwatt"),
+      logo: (
+        <img
+          src="/images/Clients-Logo/IWATT-1.webp"
+          alt="IWATT Logo"
+          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+        />
+      )
     }
   ];
 
