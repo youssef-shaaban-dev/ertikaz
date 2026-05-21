@@ -131,20 +131,51 @@ export default function FooterSection({ locale }: SectionProps) {
           </ul>
         </div>
 
-        <div className="space-y-4 text-xs">
+        <div className="space-y-4">
           <h4 className="font-extrabold text-blue-950 uppercase tracking-wider text-xs">
-            {isRtl ? "موقعنا على الخريطة" : "OUR LOCATION"}
+            {t("distributor_title")}
           </h4>
-          <div className="flex items-center gap-2 font-semibold">
-            <MapPin className="w-4 h-4 text-blue-600 shrink-0" />
-            <a
-              href="https://maps.google.com/?q=Riyadh+Saudi+Arabia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-700 font-extrabold underline underline-offset-4 decoration-blue-300 hover:decoration-blue-600 transition-colors"
-            >
-              {isRtl ? "الرياض - المملكة العربية السعودية" : "Riyadh - Saudi Arabia"}
-            </a>
+          <div className="grid grid-cols-2 gap-3 pt-1">
+            <div className="h-14 rounded-xl border border-sky-100 bg-white flex items-center justify-center p-2 shadow-sm hover:shadow-md hover:border-sky-200 transition-all duration-300 group">
+              <Image
+                src="/images/distributors/carrier.svg"
+                alt="Carrier Logo"
+                width={80}
+                height={26}
+                style={{ width: "auto", height: "auto" }}
+                className="max-h-8 object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+              />
+            </div>
+            <div className="h-14 rounded-xl border border-sky-100 bg-white flex items-center justify-center p-2 shadow-sm hover:shadow-md hover:border-sky-200 transition-all duration-300 group">
+              <Image
+                src="/images/distributors/daikin.svg"
+                alt="Daikin Logo"
+                width={80}
+                height={26}
+                style={{ width: "auto", height: "auto" }}
+                className="max-h-7 object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+              />
+            </div>
+            <div className="h-14 rounded-xl border border-sky-100 bg-white flex items-center justify-center p-2 shadow-sm hover:shadow-md hover:border-sky-200 transition-all duration-300 group">
+              <Image
+                src="/images/distributors/gree.svg"
+                alt="Gree Logo"
+                width={80}
+                height={26}
+                style={{ width: "auto", height: "auto" }}
+                className="max-h-7 object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+              />
+            </div>
+            <div className="h-14 rounded-xl border border-sky-100 bg-white flex items-center justify-center p-2 shadow-sm hover:shadow-md hover:border-sky-200 transition-all duration-300 group">
+              <Image
+                src="/images/distributors/mitsubishi.svg"
+                alt="Mitsubishi Logo"
+                width={80}
+                height={26}
+                style={{ width: "auto", height: "auto" }}
+                className="max-h-8 object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+              />
+            </div>
           </div>
         </div>
       </div>
