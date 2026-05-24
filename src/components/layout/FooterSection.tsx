@@ -27,8 +27,8 @@ export default function FooterSection({ locale }: SectionProps) {
           </div>
           <p className="text-xs font-semibold leading-relaxed">
             {isRtl
-              ? "الشركة الرائدة بالمملكة في تكييف ومقاولات الأعمال الكهروميكانيكية المتكاملة."
-              : "A premier engineering contracting corporation specializing in integrated building designs."}
+              ? "الشركة الرائدة بالمملكة في الأعمال الكهروميكانيكية المتكاملة."
+              : "A premier corporation in the Kingdom specializing in integrated electromechanical works."}
           </p>
           <div className="flex items-center gap-3 pt-2">
             {/* X */}
@@ -81,14 +81,14 @@ export default function FooterSection({ locale }: SectionProps) {
             <li className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-blue-600" />
               <a
-                href="https://maps.google.com/?q=Riyadh+Saudi+Arabia"
+                href="https://www.google.com/maps/search/El%20Ertikaz%20International%20Contracting%20Company/@24.72891225,46.81818811,17z?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-700 underline underline-offset-4 decoration-blue-300 hover:decoration-blue-600 transition-colors"
               >
                 {isRtl
-                  ? "الرياض، المملكة العربية السعودية"
-                  : "Riyadh, Saudi Arabia"}
+                  ? "14231، شارع سعد بن أبي وقاص، حي النسيم، الرياض"
+                  : "14231, Saad ibn Abi Waqqas Street, Al Nasim district, Riyadh"}
               </a>
             </li>
           </ul>
