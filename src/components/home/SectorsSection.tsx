@@ -92,7 +92,7 @@ export default function SectorsSection() {
               <span>{isRtl ? "القطاعات المستهدفة والمجالات" : "TARGET SECTORS & MARKETS"}</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-blue-950 leading-tight tracking-tight">
-              {isRtl ? "عملاؤنا وشركاء النجاح" : "Our Clients & Partners"}
+              {isRtl ? "القطاعات المستهدفة والمجالات" : "TARGET SECTORS & MARKETS"}
             </h2>
             <p className="text-slate-500 text-sm sm:text-base font-semibold leading-relaxed">
               {isRtl 

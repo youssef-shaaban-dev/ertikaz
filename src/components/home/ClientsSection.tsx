@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-
+import Image from "next/image";
 
 export default function ClientsSection() {
   const t = useTranslations("Clients");
@@ -128,10 +128,11 @@ export default function ClientsSection() {
       id: "ceer",
       name: t("ceer"),
       logo: (
-        <img
+        <Image
           src="/images/Clients-Logo/CEER_-_English_Logo.png"
           alt="CEER Logo"
-          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+          width={160} height={48}
+          className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
         />
       )
     },
@@ -139,10 +140,11 @@ export default function ClientsSection() {
       id: "arabasco",
       name: t("arabasco"),
       logo: (
-        <img
+        <Image
           src="/images/Clients-Logo/images (1).png"
           alt="Arabasco Logo"
-          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+          width={160} height={48}
+          className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
         />
       )
     },
@@ -150,10 +152,11 @@ export default function ClientsSection() {
       id: "gravity",
       name: t("gravity"),
       logo: (
-        <img
+        <Image
           src="/images/Clients-Logo/2025-10-03.jpg"
           alt="Gravity Media Logo"
-          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+          width={160} height={48}
+          className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
         />
       )
     },
@@ -161,10 +164,11 @@ export default function ClientsSection() {
       id: "fgc",
       name: t("fgc"),
       logo: (
-        <img
+        <Image
           src="/images/Clients-Logo/images.png"
           alt="FGC Logo"
-          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+          width={160} height={48}
+          className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
         />
       )
     },
@@ -172,10 +176,11 @@ export default function ClientsSection() {
       id: "mbl",
       name: t("mbl"),
       logo: (
-        <img
+        <Image
           src="/images/Clients-Logo/download.png"
           alt="MBL Logo"
-          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+          width={160} height={48}
+          className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
         />
       )
     },
@@ -183,10 +188,11 @@ export default function ClientsSection() {
       id: "icad",
       name: t("icad"),
       logo: (
-        <img
+        <Image
           src="/images/Clients-Logo/download.webp"
           alt="ICAD Logo"
-          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+          width={160} height={48}
+          className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
         />
       )
     },
@@ -194,10 +200,11 @@ export default function ClientsSection() {
       id: "iwatt",
       name: t("iwatt"),
       logo: (
-        <img
+        <Image
           src="/images/Clients-Logo/IWATT-1.webp"
           alt="IWATT Logo"
-          className="h-10 w-auto object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
+          width={160} height={48}
+          className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
         />
       )
     }
@@ -214,8 +221,8 @@ export default function ClientsSection() {
         </h3>
       </div>
       <div className="relative w-full overflow-hidden flex items-center" dir="ltr">
-        <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-48 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-48 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-48 bg-linear-to-r from-white to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-48 bg-linear-to-l from-white to-transparent z-10 pointer-events-none" />
         <div className="flex w-max gap-12 sm:gap-16 animate-marquee py-4">
           {marqueeClients.map((client, index) => (
             <div
