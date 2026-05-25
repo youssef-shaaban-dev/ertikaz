@@ -127,10 +127,10 @@ export const projectsList: Project[] = [
     locationEn: "Kingdom Tower, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/KidsArea/kingdom_tower_kids_area.png",
+    mainImage: "/images/projects/KidsArea/kidsarea.png",
     images: [
       {
-        url: "/images/projects/KidsArea/kidsarea-1.jpeg",
+        url: "/images/projects/KidsArea/kidsarea.png",
         captionAr: "منطقة الألعاب Kids Area (M Special) – برج المملكة",
         captionEn: "Kids Area (M Special) – Kingdom Tower"
       },
