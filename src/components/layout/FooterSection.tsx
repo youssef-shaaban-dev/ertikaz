@@ -17,7 +17,7 @@ export default function FooterSection({ locale }: SectionProps) {
           <div className="flex items-center justify-start">
             <div className="relative w-36 h-14 rounded-xl overflow-hidden border border-sky-200 shadow bg-white flex items-center justify-center p-1">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Ertikaz Logo"
                 fill
                 className="object-contain"

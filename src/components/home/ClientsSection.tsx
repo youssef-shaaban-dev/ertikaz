@@ -129,7 +129,7 @@ export default function ClientsSection() {
       name: t("ceer"),
       logo: (
         <Image
-          src="/images/Clients-Logo/CEER_-_English_Logo.png"
+          src="/images/Clients-Logo/CEER_-_English_Logo.webp"
           alt="CEER Logo"
           width={160} height={48}
           className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
@@ -141,7 +141,7 @@ export default function ClientsSection() {
       name: t("arabasco"),
       logo: (
         <Image
-          src="/images/Clients-Logo/images (1).png"
+          src="/images/Clients-Logo/images (1).webp"
           alt="Arabasco Logo"
           width={160} height={48}
           className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
@@ -153,7 +153,7 @@ export default function ClientsSection() {
       name: t("gravity"),
       logo: (
         <Image
-          src="/images/Clients-Logo/2025-10-03.jpg"
+          src="/images/Clients-Logo/2025-10-03.webp"
           alt="Gravity Media Logo"
           width={160} height={48}
           className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
@@ -165,7 +165,7 @@ export default function ClientsSection() {
       name: t("fgc"),
       logo: (
         <Image
-          src="/images/Clients-Logo/images.png"
+          src="/images/Clients-Logo/images.webp"
           alt="FGC Logo"
           width={160} height={48}
           className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"
@@ -177,7 +177,7 @@ export default function ClientsSection() {
       name: t("mbl"),
       logo: (
         <Image
-          src="/images/Clients-Logo/download.png"
+          src="/images/Clients-Logo/download.webp"
           alt="MBL Logo"
           width={160} height={48}
           className="h-10 w-auto min-w-[120px] object-contain max-h-12 filter grayscale contrast-125 brightness-95 hover:grayscale-0 transition-all duration-300"

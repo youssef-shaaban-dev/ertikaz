@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   title: "شركة ارتكاز للمقاولات والتكييف — Ertikaz",
   description: "شركة ارتكاز للمقاولات العالمية هي شركة هندسية وطنية رائدة متخصصة في أعمال التكييف والأعمال الكهروميكانيكية المتكاملة بالمملكة العربية السعودية.",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo.webp",
+    apple: "/logo.webp",
   },
 };
 

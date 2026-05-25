@@ -43,7 +43,7 @@ export const categories: Category[] = [
     titleEn: "Mechanical Works - HVAC Systems",
     descAr: "حلول متكاملة لتصميم وتوريد وتركيب أنظمة التكييف المباشر والمياه المبردة وأنظمة VRF الذكية ومجاري الهواء وفقاً لأعلى الكفاءات الطاقية.",
     descEn: "Comprehensive solutions for the design, supply, and installation of DX systems, chilled water, VRF, and air distribution with optimal energy efficiency.",
-    image: "/images/services/hvac.png",
+    image: "/images/services/hvac.webp",
     iconName: "hvac",
     subServices: [
       {
@@ -52,7 +52,7 @@ export const categories: Category[] = [
         titleEn: "Cooling & AC Systems",
         descAr: "نقدم مجموعة متكاملة من حلول التكييف المركزي والمباشر وأنظمة تدفق التبريد المتغير VRF للمشاريع السكنية والتجارية والضخمة.",
         descEn: "We offer a complete range of central and direct expansion AC solutions alongside variable refrigerant flow (VRF) systems for residential, commercial, and industrial projects.",
-        image: "/images/services/hvac_cooling.png",
+        image: "/images/services/hvac_cooling.webp",
         features: [
           {
             titleAr: "تقنيات تبريد متنوعة",
@@ -126,7 +126,7 @@ export const categories: Category[] = [
         titleEn: "Air Distribution & Ductwork",
         descAr: "تصنيع وتركيب مجاري الهواء (الدكت) بمختلف أنواعها، مع عزل متقدم وموزعات هواء تضمن توزيعاً هادئاً ومتوازناً.",
         descEn: "Fabrication and installation of high-grade air ducts with robust insulation and specialized outlets for seamless, draft-free airflow.",
-        image: "/images/services/hvac_ducts.png",
+        image: "/images/services/hvac_ducts.webp",
         features: [
           {
             titleAr: "تصميم هيدروليكي دقيق",
@@ -166,7 +166,7 @@ export const categories: Category[] = [
         titleEn: "Ventilation & Smoke Control",
         descAr: "تصميم وتنفيذ أنظمة التهوية الميكانيكية لمواقف السيارات والمطابخ، بجانب أنظمة سحب الدخان الذكية للحفاظ على الأرواح.",
         descEn: "Expert setup of mechanical ventilation for parking and kitchens alongside safety smoke extractors integrated with fire panels.",
-        image: "/images/services/hvac_ventilation.png",
+        image: "/images/services/hvac_ventilation.webp",
         features: [
           {
             titleAr: "أنظمة متكاملة مع الدفاع المدني",
@@ -210,7 +210,7 @@ export const categories: Category[] = [
     titleEn: "Fire Fighting & Protection Systems",
     descAr: "تصميم وتوريد وتركيب شبكات الإطفاء المائية والغازية المتكاملة وكشف الإنذار المبكر المعتمدة من الدفاع المدني السعودي وهيئة UL/FM.",
     descEn: "Turnkey installation of water-based, clean gas suppression grids and high-sensitivity fire alarms approved by Civil Defense and UL/FM standards.",
-    image: "/images/services/fire_protection.png",
+    image: "/images/services/fire_protection.webp",
     iconName: "fire",
     subServices: [
       {
@@ -219,7 +219,7 @@ export const categories: Category[] = [
         titleEn: "Water-Based Suppression & Pumps",
         descAr: "العمود الفقري لأنظمة مكافحة الحريق، تشمل الرشاشات وصناديق الحريق وغرف المضخات المعتمدة كلياً.",
         descEn: "The backbone of life safety, providing specialized automatic sprinklers, fire cabinets, and certified UL/FM pump packages.",
-        image: "/images/services/fire_water_pumps.png",
+        image: "/images/services/fire_water_pumps.webp",
         features: [
           {
             titleAr: "اعتمادات عالمية ومحلية",
@@ -259,7 +259,7 @@ export const categories: Category[] = [
         titleEn: "Clean Agent & Special Suppression",
         descAr: "حلول الإخماد الذكي للمناطق الحساسة كالخوادم وغرف الكهرباء التي تمنع استخدام المياه تفادياً لتلف المعدات.",
         descEn: "Smart suppression technology tailored for sensitive zones like data centers and LV rooms where water causes equipment damage.",
-        image: "/images/services/fire_clean_gas.png",
+        image: "/images/services/fire_clean_gas.webp",
         features: [
           {
             titleAr: "إخماد فوري بدون رطوبة",
@@ -301,7 +301,7 @@ export const categories: Category[] = [
         titleEn: "Fire Alarm & Life Safety Systems",
         descAr: "أنظمة ذكية للكشف المبكر عن الحريق وإصدار إشارات الإخلاء، مترابطة هندسياً مع أنظمة سحب الدخان والتكييف.",
         descEn: "Intelligent early fire sensing grids linked to evacuation alarms and interconnected with HVAC smoke extraction dampers.",
-        image: "/images/services/fire_alarm.png",
+        image: "/images/services/fire_alarm.webp",
         features: [
           {
             titleAr: "تحديد دقيق لمكان الحريق",
@@ -343,7 +343,7 @@ export const categories: Category[] = [
     titleEn: "Plumbing & Sanitary Works",
     descAr: "نغطي أعمال تغذية المياه النظيفة، شبكات الصرف المتطورة، أنظمة تصريف السيول، ومعالجة المياه وتحليتها وفقاً لأعلى المعايير الصحية.",
     descEn: "We cover clean water supply infrastructure, robust drainage networks, storm water management, and high-efficiency water treatment systems.",
-    image: "/images/services/plumbing.png",
+    image: "/images/services/plumbing.webp",
     iconName: "plumbing",
     subServices: [
       {
@@ -352,7 +352,7 @@ export const categories: Category[] = [
         titleEn: "Water Supply & Pumps",
         descAr: "تصميم وتركيب شبكات تغذية مياه الشرب، مع وحدات تعزيز الضغط الذكية ومحطات التسخين المركزي.",
         descEn: "Routing high-grade drinking water pipe networks combined with intelligent pressure boosters and centralized heating.",
-        image: "/images/services/plumbing_water_supply.png",
+        image: "/images/services/plumbing_water_supply.webp",
         features: [
           {
             titleAr: "مواد صحية 100% ومقاومة للحرارة",
@@ -392,7 +392,7 @@ export const categories: Category[] = [
         titleEn: "Drainage & Storm Water Systems",
         descAr: "تأسيس شبكات الصرف بالجاذبية، وعزل الروائح الكريهة، وتصريف مياه الأمطار بكفاءة للتصدي للتقلبات الجوية.",
         descEn: "Gravity-led drainage engineering ensuring complete odor isolation and stormwater networks that secure structures against storms.",
-        image: "/images/services/plumbing_drainage.png",
+        image: "/images/services/plumbing_drainage.webp",
         features: [
           {
             titleAr: "هندسة تدفق ذاتية التنظيف",
@@ -432,7 +432,7 @@ export const categories: Category[] = [
         titleEn: "Water Treatment & Purification",
         descAr: "توريد وإنشاء وحدات التحلية بالـ RO، وأنظمة التعقيم بالأشعة فوق البنفسجية وفلترة المياه الرمادية للمباني الخضراء.",
         descEn: "Assembly of Reverse Osmosis (RO) plants, Ultraviolet sterilization, and Grey Water reclaim systems for eco-friendly buildings.",
-        image: "/images/services/plumbing_treatment.png",
+        image: "/images/services/plumbing_treatment.webp",
         features: [
           {
             titleAr: "مياه فائقة النقاء للشرب والصناعة",
@@ -466,7 +466,7 @@ export const categories: Category[] = [
     titleEn: "Gas (LPG) & Medical Gas (MG) Systems",
     descAr: "تصميم وتوريد وتركيب شبكات الغاز البترولي المسال (LPG)، شبكات الغاز الطبيعي، وأنظمة الغازات الطبية (MG) المتكاملة للمستشفيات والمنشآت التجارية والصناعية.",
     descEn: "Design, supply, and installation of Liquefied Petroleum Gas (LPG) networks, Natural Gas pipelines, and certified Medical Gas (MG) systems for healthcare, commercial, and industrial facilities.",
-    image: "/images/services/gas_systems.png",
+    image: "/images/services/gas_systems.webp",
     iconName: "gas",
     subServices: [
       {
@@ -551,7 +551,7 @@ export const categories: Category[] = [
     titleEn: "Electrical & Extra Low Voltage (ELV) Systems",
     descAr: "تأسيس وتوزيع الطاقة الكهربائية والإنارة الذكية والطاقة البديلة، بالإضافة إلى الأنظمة الأمنية المتطورة وشبكات الاتصالات وأتمتة المباني الحديثة.",
     descEn: "Erecting power distribution networks, architectural smart lighting, along with advanced integrated security, communication, and smart building automation.",
-    image: "/images/services/electrical.png",
+    image: "/images/services/electrical.webp",
     iconName: "electrical",
     subServices: [
       {
@@ -770,7 +770,7 @@ export const categories: Category[] = [
         titleEn: "Building Automation & BMS",
         descAr: "دمج أنظمة المبنى الميكانيكية والكهربائية في شاشة تحكم مركزية واحدة (BMS) وتأسيس الفلل والقصور الذكية.",
         descEn: "Converging mechanical and electrical systems into a unified dashboard (BMS) alongside ultra-premium smart home installs.",
-        image: "/images/services/electrical_bms.png",
+        image: "/images/services/electrical_bms.webp",
         features: [
           {
             titleAr: "تحكم كامل ومركزي بكبسة زر",

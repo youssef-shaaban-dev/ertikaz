@@ -32,15 +32,15 @@ export const projectsList: Project[] = [
     locationEn: "Al Shifa District, Riyadh",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/Alshifa/alshifa-main.jpg",
+    mainImage: "/images/projects/Alshifa/alshifa-main.webp",
     images: [
       {
-        url: "/images/projects/Alshifa/alshifa-main.jpg",
+        url: "/images/projects/Alshifa/alshifa-main.webp",
         captionAr: "توريد وتركيب أنظمة التكييف لفيلا سكنية",
         captionEn: "Supply & Installation of HVAC Systems for Residential Villa"
       },
       {
-        url: "/images/projects/Alshifa/alshifa-extra.jpg",
+        url: "/images/projects/Alshifa/alshifa-extra.webp",
         captionAr: "أعمال تنفيذ متكاملة لشبكات تكييف الهواء",
         captionEn: "Integrated execution of air conditioning networks"
       }
@@ -57,10 +57,10 @@ export const projectsList: Project[] = [
     locationEn: "Al King Fahad District, Riyadh",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/Kingfahad/kingfahad.jpg",
+    mainImage: "/images/projects/Kingfahad/kingfahad.webp",
     images: [
       {
-        url: "/images/projects/Kingfahad/kingfahad.jpg",
+        url: "/images/projects/Kingfahad/kingfahad.webp",
         captionAr: "عمارة سكنية – حي الملك فهد",
         captionEn: "Residential Building – Al King Fahad District"
       }
@@ -77,15 +77,15 @@ export const projectsList: Project[] = [
     locationEn: "Diriyah, Riyadh",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/Dreya-Villa/screen-6.png",
+    mainImage: "/images/projects/Dreya-Villa/screen-6.webp",
     images: [
       {
-       url: "/images/projects/Dreya-Villa/screen-8.png",
+       url: "/images/projects/Dreya-Villa/screen-8.webp",
         captionAr: "توريد وتركيب نظام تكييف VRF لفيلا سكنية",
         captionEn: "Supply & Installation of VRF Air Conditioning System for Residential Villa"
       },
       {
-        url: "/images/projects/Dreya-Villa/diriyah-1.jpeg",
+        url: "/images/projects/Dreya-Villa/diriyah-1.webp",
         captionAr: "أعمال التكييف والتمديدات الداخلية للفيلا",
         captionEn: "HVAC and internal piping works for the villa"
       }
@@ -102,15 +102,15 @@ export const projectsList: Project[] = [
     locationEn: "Kingdom Tower, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/Rosenthal/rosenthal_showroom_hq.png",
+    mainImage: "/images/projects/Rosenthal/rosenthal_showroom_hq.webp",
     images: [
       {
-        url: "/images/projects/Rosenthal/rosenthal-1.jpeg",
+        url: "/images/projects/Rosenthal/rosenthal-1.webp",
         captionAr: "معرض روزنتال – برج المملكة",
         captionEn: "Rosenthal Showroom – Kingdom Tower"
       },
       {
-        url: "/images/projects/Rosenthal/rosenthal-2.jpeg",
+        url: "/images/projects/Rosenthal/rosenthal-2.webp",
         captionAr: "أنظمة التكييف ومكافحة الحريق وإنذار الحريق",
         captionEn: "HVAC, fire fighting & fire alarm systems"
       }
@@ -127,15 +127,15 @@ export const projectsList: Project[] = [
     locationEn: "Kingdom Tower, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/KidsArea/kidsarea.png",
+    mainImage: "/images/projects/KidsArea/kidsarea.webp",
     images: [
       {
-        url: "/images/projects/KidsArea/kidsarea.png",
+        url: "/images/projects/KidsArea/kidsarea.webp",
         captionAr: "منطقة الألعاب Kids Area (M Special) – برج المملكة",
         captionEn: "Kids Area (M Special) – Kingdom Tower"
       },
       {
-        url: "/images/projects/KidsArea/kidsarea-2.jpeg",
+        url: "/images/projects/KidsArea/kidsarea-2.webp",
         captionAr: "أعمال تركيب أنظمة التكييف ومكافحة الحريق",
         captionEn: "Installation of HVAC and firefighting systems"
       }
@@ -152,15 +152,15 @@ export const projectsList: Project[] = [
     locationEn: "Al Malaz, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/Gold-Orbit/screen-1.png",
+    mainImage: "/images/projects/Gold-Orbit/screen-1.webp",
     images: [
       {
-        url: "/images/projects/Gold-Orbit/screen-1.png",
+        url: "/images/projects/Gold-Orbit/screen-1.webp",
         captionAr: "معرض Gold Orbit – هايبر لولو",
         captionEn: "Gold Orbit Showroom – Lulu Hypermarket"
       },
       {
-        url: "/images/projects/Gold-Orbit/screen-12.png",
+        url: "/images/projects/Gold-Orbit/screen-12.webp",
         captionAr: "توريد وتركيب نظام التكييف لمعرض Gold Orbit",
         captionEn: "Supply & Installation of HVAC System for Gold Orbit Showroom"
       }
@@ -177,15 +177,15 @@ export const projectsList: Project[] = [
     locationEn: "Al Sahafa District, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/Balconia/balconia.jpeg",
+    mainImage: "/images/projects/Balconia/balconia.webp",
     images: [
       {
-        url: "/images/projects/Balconia/balconia-1.jpeg",
+        url: "/images/projects/Balconia/balconia-1.webp",
         captionAr: "توريد وتركيب أنظمة التكييف لفندق بلكونيا",
         captionEn: "Supply & Installation of HVAC Systems for Balconia Hotel"
       },
       {
-        url: "/images/projects/Balconia/balconia-2.jpeg",
+        url: "/images/projects/Balconia/balconia-2.webp",
         captionAr: "أعمال التكييف والتمديدات الخارجية للفندق",
         captionEn: "HVAC and external installations for the hotel"
       }
@@ -204,15 +204,15 @@ export const projectsList: Project[] = [
     locationEn: "Saudi Arabia",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/Badr/badr_dairy_factory.png",
+    mainImage: "/images/projects/Badr/badr_dairy_factory.webp",
     images: [
       {
-        url: "/images/projects/Badr/badr-1.jpeg",
+        url: "/images/projects/Badr/badr-1.webp",
         captionAr: "إحلال وتجديد وحدات التكييف بمصنع ألبان بدر",
         captionEn: "Replacement & Renovation of HVAC Units for Badr Dairy Factory"
       },
       {
-        url: "/images/projects/Badr/badr-2.jpeg",
+        url: "/images/projects/Badr/badr-2.webp",
         captionAr: "تحديث وصيانة شبكات التكييف والتهوية بالمصنع",
         captionEn: "Upgrading and maintaining air conditioning networks at the factory"
       }
@@ -254,10 +254,10 @@ export const projectsList: Project[] = [
     locationEn: "Hotat Sudair",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/FirstAir/first-air.jpg",
+    mainImage: "/images/projects/FirstAir/first-air.webp",
     images: [
       {
-        url: "/images/projects/FirstAir/first-air.jpg",
+        url: "/images/projects/FirstAir/first-air.webp",
         captionAr: "توريد وتركيب شبكة الغازات الطبية بمصنع الأدوية",
         captionEn: "Supply & Installation of Medical Gas Network for First Air Pharmaceutical Factory"
       }
@@ -274,10 +274,10 @@ export const projectsList: Project[] = [
     locationEn: "Dammam",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/Dammam/dammam.jpg",
+    mainImage: "/images/projects/Dammam/dammam.webp",
     images: [
       {
-        url: "/images/projects/Dammam/dammam.jpg",
+        url: "/images/projects/Dammam/dammam.webp",
         captionAr: "أعمال تركيب كابلات الجهد العالي – إصلاحية الدمام الجديدة",
         captionEn: "High Voltage Cable Installation Works – New Dammam Correctional Facility"
       }
@@ -296,15 +296,15 @@ export const projectsList: Project[] = [
     locationEn: "Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/KKIA/kkia-1.jpg",
+    mainImage: "/images/projects/KKIA/kkia-1.webp",
     images: [
       {
-        url: "/images/projects/KKIA/kkia-1.jpg",
+        url: "/images/projects/KKIA/kkia-1.webp",
         captionAr: "صالة 5 – مطار الملك خالد الدولي",
         captionEn: "Terminal 5 – King Khalid International Airport"
       },
       {
-        url: "/images/projects/KKIA/kkia-2.jpeg",
+        url: "/images/projects/KKIA/kkia-2.webp",
         captionAr: "تركيبات شبكة مكافحة الحريق وأنظمة التكييف بالصالة",
         captionEn: "Firefighting and HVAC installation works at the terminal"
       }
@@ -321,10 +321,10 @@ export const projectsList: Project[] = [
     locationEn: "Jeddah",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/Arabasco/arabasco.png",
+    mainImage: "/images/projects/Arabasco/arabasco.webp",
     images: [
       {
-        url: "/images/projects/Arabasco/arabasco.png",
+        url: "/images/projects/Arabasco/arabasco.webp",
         captionAr: "صالة طيران عرباسكو – مطار جدة الدولي",
         captionEn: "Arasco Aviation Lounge – Jeddah International Airport"
       },
@@ -343,10 +343,10 @@ export const projectsList: Project[] = [
     locationEn: "Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/Anfas/anfas.jpg",
+    mainImage: "/images/projects/Anfas/anfas.webp",
     images: [
       {
-        url: "/images/projects/Anfas/anfas.jpg",
+        url: "/images/projects/Anfas/anfas.webp",
         captionAr: "توريد وتركيب أنظمة التهوية بمستشفى أنفاس الراحة",
         captionEn: "Supply & Installation of Ventilation Systems for Anfas Al Raha Hospital"
       }
@@ -363,10 +363,10 @@ export const projectsList: Project[] = [
     locationEn: "Hotat Sudair",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/FirstAir/first-air.jpg",
+    mainImage: "/images/projects/FirstAir/first-air.webp",
     images: [
       {
-        url: "/images/projects/FirstAir/first-air.jpg",
+        url: "/images/projects/FirstAir/first-air.webp",
         captionAr: "توريد وتركيب شبكة الغازات الطبية بمصنع الأدوية",
         captionEn: "Supply & Installation of Medical Gas Network for First Air Pharmaceutical Factory"
       }
@@ -385,10 +385,10 @@ export const projectsList: Project[] = [
     locationEn: "Saudi Arabia",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/Gravity/gravity_media.png",
+    mainImage: "/images/projects/Gravity/gravity_media.webp",
     images: [
       {
-        url: "/images/projects/Gravity/gravity.jpg",
+        url: "/images/projects/Gravity/gravity.webp",
         captionAr: "عربة البث لشركة Gravity Media Arabia",
         captionEn: "Broadcasting Vehicle – Gravity Media Arabia"
       }
@@ -405,15 +405,15 @@ export const projectsList: Project[] = [
     locationEn: "Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/SBA/sba_riyadh.png",
+    mainImage: "/images/projects/SBA/sba_riyadh.webp",
     images: [
       {
-        url: "/images/projects/SBA/sba-1.jpeg",
+        url: "/images/projects/SBA/sba-1.webp",
         captionAr: "هيئة الإذاعة والتلفزيون – الرياض",
         captionEn: "Saudi Broadcasting Authority – Riyadh"
       },
       {
-        url: "/images/projects/SBA/sba-2.jpeg",
+        url: "/images/projects/SBA/sba-2.webp",
         captionAr: "توريد وتركيب أنظمة التكييف بصالة السمنار وغرف التحكم",
         captionEn: "Supply & Installation of HVAC Systems for Seminar Hall & Control Rooms"
       }
@@ -432,15 +432,15 @@ export const projectsList: Project[] = [
     locationEn: "Saudi Arabia",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/Taiba/taiba_warehouses.png",
+    mainImage: "/images/projects/Taiba/taiba_warehouses.webp",
     images: [
       {
-        url: "/images/projects/Taiba/taiba-1.jpeg",
+        url: "/images/projects/Taiba/taiba-1.webp",
         captionAr: "توريد وتركيب أنظمة التكييف والتهوية بمستودعات طيبة",
         captionEn: "Supply & Installation of HVAC & Ventilation Systems for Taiba Warehouses"
       },
       {
-        url: "/images/projects/Taiba/taiba-2.jpeg",
+        url: "/images/projects/Taiba/taiba-2.webp",
         captionAr: "أعمال التكييف والتمديدات الهوائية بالمستودعات",
         captionEn: "HVAC and ducting installation at the warehouses"
       }
