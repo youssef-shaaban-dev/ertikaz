@@ -69,9 +69,10 @@ export default function ProjectsPageClient({ locale }: { locale: string }) {
             alt="Engineering Blueprint"
             fill
             priority
+            sizes="100vw"
             className="object-cover opacity-25 scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/70 via-blue-950/90 to-slate-50" />
+          <div className="absolute inset-0 bg-linear-to-b from-blue-950/70 via-blue-950/90 to-slate-50" />
         </div>
 
         {/* Hero Content */}

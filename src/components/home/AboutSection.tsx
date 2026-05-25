@@ -44,9 +44,10 @@ export default function AboutSection() {
               alt="Modern glass architecture"
               fill
               className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/20 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-blue-950/20 to-transparent" />
           </div>
 
           {/* 2. Content Container */}
@@ -74,7 +75,7 @@ export default function AboutSection() {
                 <div key={idx} className="flex items-start gap-4 rtl:flex-row ltr:flex-row-reverse group hover:bg-sky-50/50 p-2 rounded-2xl transition-all duration-300">
                   
                   {/* Dynamic Overflow Circle Icon Aesthetic */}
-                  <div className="relative flex-shrink-0 mt-1">
+                  <div className="relative shrink-0 mt-1">
                     <div className="w-12 h-12 bg-[#54c4f3] rounded-full group-hover:scale-110 transition-transform duration-300" />
                     <div className="absolute inset-0 flex items-center justify-center text-slate-900 drop-shadow-sm transform -translate-x-2 rtl:translate-x-2">
                       <div className="scale-[1.1]">

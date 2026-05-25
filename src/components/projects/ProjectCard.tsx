@@ -23,9 +23,9 @@ export default function ProjectCard({ project, onClick, isRtl }: ProjectCardProp
           alt={isRtl ? project.titleAr : project.titleEn}
           fill
           className="object-cover group-hover:scale-110 transition-transform duration-700"
-          sizes="(max-w-768px) 100vw, 33vw"
+          sizes="(max-width: 768px) 100vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-blue-950/20 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-blue-950/80 via-blue-950/20 to-transparent" />
 
         {/* Overlay Action */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -42,7 +42,7 @@ export default function ProjectCard({ project, onClick, isRtl }: ProjectCardProp
       </div>
 
       {/* Descriptions */}
-      <div className="p-6 sm:p-8 flex-grow flex flex-col justify-between text-right rtl:text-right ltr:text-left">
+      <div className="p-6 sm:p-8 grow flex flex-col justify-between text-right rtl:text-right ltr:text-left">
         <div className="space-y-2">
           <h4 className="text-lg font-black text-blue-950 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
             {isRtl ? project.titleAr : project.titleEn}

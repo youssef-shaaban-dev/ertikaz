@@ -79,7 +79,7 @@ export default function HeroSection() {
           {/* Quick scope icons */}
           <div className="pt-6 border-t border-sky-100 grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 flex-shrink-0">
+              <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 shrink-0">
                 <Wind className="w-4 h-4" />
               </div>
               <span className="text-[11px] sm:text-xs font-black text-blue-900/80 leading-tight">
@@ -87,7 +87,7 @@ export default function HeroSection() {
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 flex-shrink-0">
+              <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 shrink-0">
                 <Flame className="w-4 h-4" />
               </div>
               <span className="text-[11px] sm:text-xs font-black text-blue-900/80 leading-tight">
@@ -95,7 +95,7 @@ export default function HeroSection() {
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 flex-shrink-0">
+              <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 shrink-0">
                 <Droplet className="w-4 h-4" />
               </div>
               <span className="text-[11px] sm:text-xs font-black text-blue-900/80 leading-tight">
@@ -103,7 +103,7 @@ export default function HeroSection() {
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 flex-shrink-0">
+              <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-blue-600 shrink-0">
                 <Zap className="w-4 h-4" />
               </div>
               <span className="text-[11px] sm:text-xs font-black text-blue-900/80 leading-tight">
@@ -151,8 +151,9 @@ export default function HeroSection() {
               fill
               priority
               className="object-cover object-center"
-              sizes="(max-w-720px) 100vw, 50vw"
+              sizes="(max-width: 720px) 100vw, 50vw"
               loading="eager"
+              fetchPriority="high"
             />
           </div>
         </div>

@@ -16,28 +16,28 @@ export default function CatalogSection() {
     <Link 
       key={category.id}
       href={`/${locale}/services/${category.id}`}
-      className={`group relative rounded-[2rem] overflow-hidden bg-white border border-sky-100/80 shadow-md hover:shadow-2xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between h-[460px] w-full ${isSecondRow ? 'lg:w-[calc(33.33%-1.75rem)]' : ''}`}
+      className={`group relative rounded-4xl overflow-hidden bg-white border border-sky-100/80 shadow-md hover:shadow-2xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between h-[460px] w-full ${isSecondRow ? 'lg:w-[calc(33.33%-1.75rem)]' : ''}`}
     >
       {/* Category Image */}
-      <div className="relative w-full h-[200px] overflow-hidden bg-slate-100 flex-shrink-0">
+      <div className="relative w-full h-[200px] overflow-hidden bg-slate-100 shrink-0">
         <Image
           src={category.image}
           alt={isRtl ? category.titleAr : category.titleEn}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-700"
-          sizes="(max-w-768px) 100vw, 33vw"
-          priority
+          sizes="(max-width: 768px) 100vw, 33vw"
+          loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-950/70 via-blue-950/10 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-blue-950/70 via-blue-950/10 to-transparent" />
         
         {/* Glowing Floating Icon in corner */}
-        <div className="absolute bottom-4 rtl:left-4 ltr:right-4 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-sky-500 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 border-2 border-white z-10">
+        <div className="absolute bottom-4 rtl:left-4 ltr:right-4 w-12 h-12 rounded-xl bg-linear-to-br from-blue-600 to-sky-500 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 border-2 border-white z-10">
           {getIcon(category.iconName)}
         </div>
       </div>
 
       {/* Card Content */}
-      <div className="p-6 flex-grow flex flex-col justify-between">
+      <div className="p-6 grow flex flex-col justify-between">
         <div className="space-y-3">
           <h3 className="text-xl sm:text-2xl font-black text-blue-950 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
             {isRtl ? category.titleAr : category.titleEn}
