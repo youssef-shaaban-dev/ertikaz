@@ -7,6 +7,9 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale: "ar",
 
+  // Disable locale detection to force Arabic default for all users
+  localeDetection: false,
+
   // Do not show the locale prefix for the default locale if you want clean URLs,
   // but showing it is standard and simpler for next-intl. Let's keep it standard.
   localePrefix: "always"
