@@ -1,4 +1,9 @@
+import { setRequestLocale } from "next-intl/server";
 import ProjectsPageClient from "@/components/projects/ProjectsPageClient";
+
+export function generateStaticParams() {
+  return [{ locale: "ar" }, { locale: "en" }];
+}
 
 export async function generateMetadata({
   params,
@@ -21,6 +26,7 @@ export default async function ProjectsPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
 
   return <ProjectsPageClient locale={locale} />;
 }

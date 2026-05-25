@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import HeaderSection from "@/components/layout/HeaderSection";
 import FooterSection from "@/components/layout/FooterSection";
 import StickyWhatsapp from "@/components/layout/StickyWhatsapp";
@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   },
 };
 
+export function generateStaticParams() {
+  return [{ locale: "ar" }, { locale: "en" }];
+}
+
 export default async function LocaleLayout({
   children,
   params,
@@ -34,6 +38,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const messages = await getMessages();
 
   const isRtl = locale === "ar";

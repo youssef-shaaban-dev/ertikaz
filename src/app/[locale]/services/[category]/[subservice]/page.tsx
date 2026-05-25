@@ -1,8 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { ArrowLeft, ArrowRight, CheckCircle2, Award, Check } from "lucide-react";
 import { categories } from "@/data/services";
+
+const locales = ["ar", "en"];
+
+export function generateStaticParams() {
+  return locales.flatMap((locale) =>
+    categories.flatMap((cat) =>
+      cat.subServices.map((sub) => ({
+        locale,
+        category: cat.id,
+        subservice: sub.id,
+      }))
+    )
+  );
+}
 
 export default async function SubServicePage({
   params,
@@ -10,6 +25,7 @@ export default async function SubServicePage({
   params: Promise<{ locale: string; category: string; subservice: string }>;
 }) {
   const { locale, category: categoryId, subservice: subServiceId } = await params;
+  setRequestLocale(locale);
   const isRtl = locale === "ar";
 
   const category = categories.find((c) => c.id === categoryId);

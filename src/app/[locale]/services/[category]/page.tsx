@@ -1,8 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { ArrowLeft, ArrowRight, Layers } from "lucide-react";
 import { categories } from "@/data/services";
+
+const locales = ["ar", "en"];
+
+export function generateStaticParams() {
+  return locales.flatMap((locale) =>
+    categories.map((cat) => ({ locale, category: cat.id }))
+  );
+}
 
 export default async function CategoryPage({
   params,
@@ -10,6 +19,7 @@ export default async function CategoryPage({
   params: Promise<{ locale: string; category: string }>;
 }) {
   const { locale, category: categoryId } = await params;
+  setRequestLocale(locale);
   const isRtl = locale === "ar";
 
   const category = categories.find((c) => c.id === categoryId);
