@@ -60,9 +60,14 @@ export const projectsList: Project[] = [
     mainImage: "/images/projects/kingfahad.jpg",
     images: [
       {
-        url: "/images/projects/kingfahad.jpg",
+        url: "/images/projects/balconia-2.jpeg",
         captionAr: "توريد وتركيب أنظمة التكييف المخفي لعمارة سكنية",
         captionEn: "Supply & Installation of Concealed HVAC Systems for Residential Building"
+      },
+      {
+        url: "/images/projects/balconia-1.jpeg",
+        captionAr: "أعمال تنفيذ متكاملة لشبكات تكييف الهواء",
+        captionEn: "Integrated execution of air conditioning networks"
       }
     ]
   },
@@ -77,15 +82,15 @@ export const projectsList: Project[] = [
     locationEn: "Diriyah, Riyadh",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/diriyah-1.jpeg",
+    mainImage: "/images/Projects Photos/Dreya Villa/screen-6.png",
     images: [
       {
-        url: "/images/projects/diriyah-1.jpeg",
+       url: "/images/Projects Photos/Dreya Villa/screen-8.png",
         captionAr: "توريد وتركيب نظام تكييف VRF لفيلا سكنية",
         captionEn: "Supply & Installation of VRF Air Conditioning System for Residential Villa"
       },
       {
-        url: "/images/projects/diriyah-2.jpeg",
+        url: "/images/projects/diriyah-1.jpeg",
         captionAr: "أعمال التكييف والتمديدات الداخلية للفيلا",
         captionEn: "HVAC and internal piping works for the villa"
       }
@@ -102,7 +107,7 @@ export const projectsList: Project[] = [
     locationEn: "Kingdom Tower, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/rosenthal-1.jpeg",
+    mainImage: "/images/projects/rosenthal_showroom_hq.png",
     images: [
       {
         url: "/images/projects/rosenthal-1.jpeg",
@@ -127,7 +132,7 @@ export const projectsList: Project[] = [
     locationEn: "Kingdom Tower, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/kidsarea-1.jpeg",
+    mainImage: "/images/projects/kingdom_tower_kids_area.png",
     images: [
       {
         url: "/images/projects/kidsarea-1.jpeg",
@@ -152,10 +157,10 @@ export const projectsList: Project[] = [
     locationEn: "Al Malaz, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/goldorbit-1.jpeg",
+    mainImage: "/images/Projects Photos/Gold Orbit/screen-1.png",
     images: [
       {
-        url: "/images/projects/goldorbit-1.jpeg",
+        url: "/images/Projects Photos/Gold Orbit/screen-1.png",
         captionAr: "معرض Gold Orbit – هايبر لولو",
         captionEn: "Gold Orbit Showroom – Lulu Hypermarket"
       },
@@ -321,7 +326,7 @@ export const projectsList: Project[] = [
     locationEn: "Jeddah",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/arasco-1.jpg",
+    mainImage: "/images/projects/arasco_aviation_lounge_hq.png",
     images: [
       {
         url: "/images/projects/arasco-1.jpg",
