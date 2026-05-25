@@ -182,7 +182,7 @@ export const projectsList: Project[] = [
     locationEn: "Al Sahafa District, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/balconia-1.jpeg",
+    mainImage: "/images/projects/balconia_hotel.png",
     images: [
       {
         url: "/images/projects/balconia-1.jpeg",
@@ -209,7 +209,7 @@ export const projectsList: Project[] = [
     locationEn: "Saudi Arabia",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/badr-1.jpeg",
+    mainImage: "/images/projects/badr_dairy_factory.png",
     images: [
       {
         url: "/images/projects/badr-1.jpeg",
