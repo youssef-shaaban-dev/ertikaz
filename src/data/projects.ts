@@ -395,7 +395,7 @@ export const projectsList: Project[] = [
     locationEn: "Saudi Arabia",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/gravity.jpg",
+    mainImage: "/images/projects/gravity_media.png",
     images: [
       {
         url: "/images/projects/gravity.jpg",
@@ -415,7 +415,7 @@ export const projectsList: Project[] = [
     locationEn: "Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/sba-1.jpeg",
+    mainImage: "/images/projects/sba_riyadh.png",
     images: [
       {
         url: "/images/projects/sba-1.jpeg",
@@ -442,7 +442,7 @@ export const projectsList: Project[] = [
     locationEn: "Saudi Arabia",
     dateAr: "٢٠٢٥ م",
     dateEn: "2025",
-    mainImage: "/images/projects/taiba-1.jpeg",
+    mainImage: "/images/projects/taiba_warehouses.png",
     images: [
       {
         url: "/images/projects/taiba-1.jpeg",
