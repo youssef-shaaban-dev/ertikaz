@@ -165,7 +165,7 @@ export const projectsList: Project[] = [
         captionEn: "Gold Orbit Showroom – Lulu Hypermarket"
       },
       {
-        url: "/images/projects/goldorbit-2.jpeg",
+        url: "/images/Projects Photos/Gold Orbit/screen-12.png",
         captionAr: "توريد وتركيب نظام التكييف لمعرض Gold Orbit",
         captionEn: "Supply & Installation of HVAC System for Gold Orbit Showroom"
       }
@@ -182,7 +182,7 @@ export const projectsList: Project[] = [
     locationEn: "Al Sahafa District, Riyadh",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/balconia_hotel.png",
+    mainImage: "/images/projects/balconia.jpeg",
     images: [
       {
         url: "/images/projects/balconia-1.jpeg",
@@ -326,18 +326,13 @@ export const projectsList: Project[] = [
     locationEn: "Jeddah",
     dateAr: "٢٠٢٦ م",
     dateEn: "2026",
-    mainImage: "/images/projects/arasco_aviation_lounge_hq.png",
+    mainImage: "/images/projects/arabasco.png",
     images: [
       {
-        url: "/images/projects/arasco-1.jpg",
+        url: "/images/projects/arabasco.png",
         captionAr: "صالة طيران عرباسكو – مطار جدة الدولي",
         captionEn: "Arasco Aviation Lounge – Jeddah International Airport"
       },
-      {
-        url: "/images/projects/arasco-2.jpeg",
-        captionAr: "توريد وتركيب أنظمة التكييف والتهوية بالصالة",
-        captionEn: "Supply & Installation of HVAC & Ventilation Systems for the Lounge"
-      }
     ]
   },
 
