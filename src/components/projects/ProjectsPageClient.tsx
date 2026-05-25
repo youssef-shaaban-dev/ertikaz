@@ -86,7 +86,7 @@ export default function ProjectsPageClient({ locale }: { locale: string }) {
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-black text-white tracking-tight">
-            {isRtl ? "سجل منجزات ارتكاز" : "Our Projects"}
+            {isRtl ? "سجل انجازات ارتكاز" : "Our Projects"}
           </h1>
           <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto font-medium leading-relaxed">
             {isRtl
