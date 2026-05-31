@@ -13,10 +13,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const isRtl = locale === "ar";
   return {
-    title: isRtl ? "معرض أعمال ومشاريع ارتكاز" : "Ertikaz Engineering Projects Gallery",
+    title: isRtl 
+      ? "مشاريع الارتكاز الدولية للمقاولات - أعمال MEP و HVAC" 
+      : "Ertikaz Projects | MEP & HVAC Works in Saudi Arabia",
     description: isRtl
-      ? "تصفح سجل كبرى مشاريع التكييف والتبريد والمقاولات الكهروميكانيكية المعتمدة التي نفذتها شركة ارتكاز بالمملكة العربية السعودية."
-      : "Browse the engineering portfolio of premier HVAC, electromechanical, and fire protection projects implemented by Ertikaz in Saudi Arabia.",
+      ? "أهم المشاريع المنفذة من شركة الارتكاز الدولية في أعمال MEP وHVAC - التكييف، مكافحة الحريق، الكهرباء والتهوية في المملكة العربية السعودية."
+      : "Explore Ertikaz projects in Saudi Arabia, including MEP, HVAC, fire protection, electrical, ventilation, and gas works.",
   };
 }
 

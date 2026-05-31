@@ -17,14 +17,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "الارتكاز الدولية للمقاولات فى المملكة العربية السعودية",
-  description: "شركة الارتكاز الدولية للمقاولات تقدم حلول MEP وHVAC - توريد وتركيب وصيانة التكييف، مكافحة الحريق، السباكة والكهرباء في الرياض - المملكة العربية السعودية.",
-  icons: {
-    icon: "/logo.webp",
-    apple: "/logo.webp",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isRtl = locale === "ar";
+  
+  return {
+    title: isRtl 
+      ? "الارتكاز الدولية للمقاولات فى المملكة العربية السعودية"
+      : "Ertikaz International Contracting | MEP & HVAC KSA",
+    description: isRtl
+      ? "شركة الارتكاز الدولية للمقاولات تقدم حلول MEP وHVAC - توريد وتركيب وصيانة التكييف، مكافحة الحريق، السباكة والكهرباء في الرياض - المملكة العربية السعودية."
+      : "Ertikaz International Contracting delivers MEP, HVAC, fire protection, plumbing, and electrical solutions for projects across Saudi Arabia.",
+    icons: {
+      icon: "/logo.webp",
+      apple: "/logo.webp",
+    },
+  };
+}
 
 export function generateStaticParams() {
   return [{ locale: "ar" }, { locale: "en" }];
