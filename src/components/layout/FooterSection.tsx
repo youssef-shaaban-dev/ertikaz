@@ -201,7 +201,7 @@ export default function FooterSection({ locale }: SectionProps) {
           <p>
             {isRtl ? "صُنع بكل فخر في مصر بحب ❤️ " : "Proudly Crafted in Egypt with Love ❤️ "}
             <Link href="https://mrco-egypt.com" target="_blank" className="text-blue-600 hover:text-blue-500 transition-colors underline underline-offset-2">
-              {isRtl ? "تم تطوير الموقع بواسطة MRCO-Egypt" : "Website developed by MRCO-Egypt"}
+              {isRtl ? "تم تصميم وتطوير الموقع من خلال شركة ميركو ايجيبت" : "Website developed by MRCO-Egypt"}
             </Link>
           </p>
         </div>
