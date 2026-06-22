@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Mail, Phone, MapPin } from "lucide-react";
 
@@ -191,7 +192,19 @@ export default function FooterSection({ locale }: SectionProps) {
       </div>
 
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-sky-100 text-center text-xs text-blue-900/50 font-bold flex flex-col sm:flex-row justify-between items-center gap-4">
-        <p>{t("footer_text")}</p>
+        <div className="text-blue-900/70 text-xs font-body space-y-2 text-center md:text-left rtl:md:text-right">
+          <p>
+            {isRtl
+              ? "© 2026 ارتكاز - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري."
+              : "© 2026 Ertikaz - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited."}
+          </p>
+          <p>
+            {isRtl ? "صُنع بكل فخر في مصر بحب ❤️ " : "Proudly Crafted in Egypt with Love ❤️ "}
+            <Link href="https://mrco-egypt.com" target="_blank" className="text-blue-600 hover:text-blue-500 transition-colors underline underline-offset-2">
+              {isRtl ? "تم تطوير الموقع بواسطة MRCO-Egypt" : "Website developed by MRCO-Egypt"}
+            </Link>
+          </p>
+        </div>
         <p>
           {isRtl
             ? "معتمد ومصنف لدى الدفاع المدني والجهات المعنية بالمملكة."
