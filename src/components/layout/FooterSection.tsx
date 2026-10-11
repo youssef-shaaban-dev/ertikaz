@@ -212,7 +212,7 @@ export default function FooterSection({ locale }: SectionProps) {
 
         {/* Crafted in Egypt & Developed by MRCO */}
         <p className="text-xs sm:text-sm font-semibold text-blue-950">
-          {isRtl ? "صُنع بكل فخر في مصر بحب ❤️ " : "Proudly Crafted in Egypt with Love ❤️ "}
+          {isRtl ? "صُنع بكل حب في مصر ❤️ " : "Proudly Crafted in Egypt with Love ❤️ "}
           <Link href="https://mrco-egypt.com" target="_blank" className="text-blue-600 hover:text-blue-800 transition-colors underline underline-offset-4 font-bold">
             {isRtl ? "تم تطوير الموقع من خلال شركة ميركو ايجيبت" : "Website developed by MRCO-Egypt"}
           </Link>
