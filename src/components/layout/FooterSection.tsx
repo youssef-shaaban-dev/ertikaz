@@ -1,7 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Info } from "lucide-react";
 
 interface SectionProps {
   locale: string;
@@ -10,6 +13,7 @@ interface SectionProps {
 export default function FooterSection({ locale }: SectionProps) {
   const t = useTranslations("Index");
   const isRtl = locale === "ar";
+  const [showPartnership, setShowPartnership] = useState(false);
 
   return (
     <footer id="contact" className="py-16 border-t border-sky-100 px-6 bg-[#f4faff] relative z-20">
@@ -191,25 +195,64 @@ export default function FooterSection({ locale }: SectionProps) {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-sky-100 text-center text-xs text-blue-900/50 font-bold flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div className="text-blue-900/70 text-xs font-body space-y-2 text-center md:text-left rtl:md:text-right">
-          <p>
-            {isRtl
-              ? "© 2026 ارتكاز - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري."
-              : "© 2026 Ertikaz - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited."}
-          </p>
-          <p>
-            {isRtl ? "صُنع بكل فخر في مصر بحب ❤️ " : "Proudly Crafted in Egypt with Love ❤️ "}
-            <Link href="https://mrco-egypt.com" target="_blank" className="text-blue-600 hover:text-blue-500 transition-colors underline underline-offset-2">
-              {isRtl ? "تم تصميم وتطوير الموقع من خلال شركة ميركو ايجيبت" : "Website developed by MRCO-Egypt"}
-            </Link>
-          </p>
-        </div>
-        <p>
+      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-sky-200/80 flex flex-col items-center justify-center text-center space-y-3 font-body">
+        {/* Accreditation */}
+        <p className="font-bold text-blue-950 text-xs sm:text-sm tracking-wide">
           {isRtl
             ? "معتمد ومصنف لدى الدفاع المدني والجهات المعنية بالمملكة."
             : "Civil Defense and Engineering Council Accredited."}
         </p>
+
+        {/* Copyright */}
+        <p className="max-w-4xl text-xs sm:text-[13px] font-semibold text-blue-950/85 leading-relaxed">
+          {isRtl
+            ? "© 2026 ارتكاز - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري."
+            : "© 2026 Ertikaz - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited."}
+        </p>
+
+        {/* Crafted in Egypt & Developed by MRCO */}
+        <p className="text-xs sm:text-sm font-semibold text-blue-950">
+          {isRtl ? "صُنع بكل فخر في مصر بحب ❤️ " : "Proudly Crafted in Egypt with Love ❤️ "}
+          <Link href="https://mrco-egypt.com" target="_blank" className="text-blue-600 hover:text-blue-800 transition-colors underline underline-offset-4 font-bold">
+            {isRtl ? "تم تطوير الموقع من خلال شركة ميركو ايجيبت" : "Website developed by MRCO-Egypt"}
+          </Link>
+        </p>
+
+        {/* MRCO-Egypt Partnership Tooltip */}
+        <div className="pt-2">
+          <div
+            className="inline-flex flex-wrap items-center justify-center gap-2 group relative cursor-help text-center select-none"
+            onClick={() => setShowPartnership(!showPartnership)}
+          >
+            <p dir="ltr" className="text-xs sm:text-[13px] text-slate-700 group-hover:text-blue-950 transition-colors leading-relaxed max-w-[320px] sm:max-w-none border-b border-dashed border-slate-400 group-hover:border-blue-600 pb-0.5 font-medium">
+              <span className="text-blue-950 font-bold">Ertikaz | </span>
+              <a href="https://mrco-egypt.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline hover:text-blue-800 transition-colors font-bold">Growth & Marketing by MRCO-Egypt</a>
+              <span className="text-slate-600 group-hover:text-slate-900 transition-colors font-medium"> a strategy-driven digital marketing and brand communication agency in Egypt</span>
+            </p>
+
+            <Info className={`w-4 h-4 transition-colors flex-shrink-0 inline-block ${showPartnership ? 'text-blue-700' : 'text-blue-600 group-hover:text-blue-800'}`} />
+
+            <div
+              className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[90vw] sm:w-[460px] p-4 sm:p-5 bg-[#0B1528] rounded-xl border border-amber-400/40 shadow-2xl transition-all duration-300 z-50 text-left pointer-events-none ${showPartnership
+                  ? 'opacity-100 visible translate-y-0'
+                  : 'opacity-0 invisible translate-y-2 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0'
+                }`}
+              dir="ltr"
+            >
+              <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-2">
+                <span className="text-amber-400 font-bold text-sm tracking-wide">Growth & Marketing</span>
+              </div>
+              <p className="text-xs sm:text-[13px] font-normal text-slate-100 leading-relaxed mb-3">
+                Ertikaz - Growth & Marketing by MRCO-Egypt , a strategy-driven digital marketing and brand communication agency in Egypt, for brand strategy, digital marketing, and web development.
+              </p>
+              <p className="text-xs sm:text-[13px] font-normal text-slate-100 leading-relaxed">
+                MRCO-Egypt specializes in brand strategy, brand identity, web development, SEO, Generative Engine Optimization (GEO), and AI Optimization (AIO), helping businesses build distinctive brands and achieve measurable digital growth.
+              </p>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 border-[7px] border-transparent border-t-amber-400/40"></div>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#0B1528] -mt-[1px]"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
