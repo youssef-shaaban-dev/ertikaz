@@ -233,14 +233,14 @@ export default function FooterSection({ locale }: SectionProps) {
             <Info className={`w-4 h-4 transition-colors flex-shrink-0 inline-block ${showPartnership ? 'text-blue-700' : 'text-blue-600 group-hover:text-blue-800'}`} />
 
             <div
-              className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[90vw] sm:w-[460px] p-4 sm:p-5 bg-[#0B1528] rounded-xl border border-amber-400/40 shadow-2xl transition-all duration-300 z-50 text-left pointer-events-none ${showPartnership
+              className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[90vw] sm:w-[460px] p-4 sm:p-5 bg-blue-950 rounded-xl border border-blue-600/40 shadow-2xl transition-all duration-300 z-50 text-left pointer-events-none ${showPartnership
                   ? 'opacity-100 visible translate-y-0'
                   : 'opacity-0 invisible translate-y-2 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0'
                 }`}
               dir="ltr"
             >
               <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-2">
-                <span className="text-amber-400 font-bold text-sm tracking-wide">Growth & Marketing</span>
+                <span className="text-blue-600 font-bold text-sm tracking-wide">Growth & Marketing</span>
               </div>
               <p className="text-xs sm:text-[13px] font-normal text-slate-100 leading-relaxed mb-3">
                 Ertikaz - Growth & Marketing by MRCO-Egypt , a strategy-driven digital marketing and brand communication agency in Egypt, for brand strategy, digital marketing, and web development.
@@ -248,8 +248,8 @@ export default function FooterSection({ locale }: SectionProps) {
               <p className="text-xs sm:text-[13px] font-normal text-slate-100 leading-relaxed">
                 MRCO-Egypt specializes in brand strategy, brand identity, web development, SEO, Generative Engine Optimization (GEO), and AI Optimization (AIO), helping businesses build distinctive brands and achieve measurable digital growth.
               </p>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 border-[7px] border-transparent border-t-amber-400/40"></div>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#0B1528] -mt-[1px]"></div>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 border-[7px] border-transparent border-t-blue-600/40"></div>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-blue-950 -mt-[1px]"></div>
             </div>
           </div>
         </div>
