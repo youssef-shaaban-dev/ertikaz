@@ -206,8 +206,8 @@ export default function FooterSection({ locale }: SectionProps) {
         {/* Copyright */}
         <p className="max-w-4xl text-xs sm:text-[13px] font-semibold text-blue-950/85 leading-relaxed">
           {isRtl
-            ? "© 2026 ارتكاز - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري."
-            : "© 2026 Ertikaz - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited."}
+            ? "© 2027 ارتكاز - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري."
+            : "© 2027 Ertikaz - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited."}
         </p>
 
         {/* Crafted in Egypt & Developed by MRCO */}
